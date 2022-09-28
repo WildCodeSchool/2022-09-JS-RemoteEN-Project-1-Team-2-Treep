@@ -1,13 +1,13 @@
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family:Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif
 }
 
 body {
-margin: 0;
+  margin: 0;
+  min-height: 100vh;
 }
 
 /* footer css mobile 1st */
@@ -16,15 +16,18 @@ margin: 0;
 .projcontainer {
   display: flex;
   flex-direction: column;
-  background-color: rgba(128, 128, 128, 0.263);
+  padding: 2rem;
+  background-color: #F3F3F3;
+
 }
 
 .joincontainer {
   display: flex;
   flex-direction: column;
-  background-color: rgba(188, 188, 188, 0.995);
+  background-color: #F3F3F3;
   align-items: center;
 }
+
 .joinsubcontainer {
   background-color: #ffffff;
   width: 80%;
@@ -44,7 +47,7 @@ margin: 0;
 
 /* Timeline CSS */
 .timeline {
-  display: block;  
+  display: block;
   margin-top: 250px;
   padding: 15px;
   grid-template-columns: 40% auto;
@@ -60,21 +63,23 @@ margin: 0;
   list-style: none;
   padding: 0;
 }
+
 li {
   margin-top: 0px;
   position: relative;
   width: 100%;
   padding: 0px;
 }
+
 li p {
   transform: translateY(-10px);
-  opacity: 0;  
+  opacity: 0;
   padding: 0 100px;
   transition: 1.5s;
 }
 
 .h-text {
-    display: none;
+  display: none;
 }
 
 .date {
@@ -89,14 +94,14 @@ li p {
 }
 
 .date1 {
-    position: absolute;
-    top: -190px;
-    left: 12%;
-    /* opacity: 0; */
-    transition: 1.5s;
-    font-size: 5rem;
-    font-weight: 900;
-    transform: translateX(0px) rotateZ(-90deg);
+  position: absolute;
+  top: -190px;
+  left: 12%;
+  /* opacity: 0; */
+  transition: 1.5s;
+  font-size: 5rem;
+  font-weight: 900;
+  transform: translateX(0px) rotateZ(-90deg);
 }
 
 .timeline-line {
@@ -135,7 +140,7 @@ li p {
   text-align: center;
 }
 
-.subcontainersocials li{
+.subcontainersocials li {
   list-style-type: none;
 }
 
@@ -147,8 +152,8 @@ li p {
 
 /* CSS FOR THE POP-UP FORM BELOW (INVISIBLE UNTIL BUTTON CLICKED)*/
 
-.topcont{
-  display:flex;
+.topcont {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -180,41 +185,41 @@ li p {
   transform: rotate(45deg);
   cursor: pointer;
   position: absolute;
-  top:-1%;
-  right:3%;
+  top: -1%;
+  right: 3%;
 }
 
 .formPopup {
   display: none;
-  position: fixed; 
+  position: fixed;
   z-index: 1;
-  padding-top: 10vh; 
+  padding-top: 10vh;
   padding-left: 40vw;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50p;
   animation: open 0.5s forwards;
 }
 
 @keyframes open {
   0% {
-    transform: translate(0%,0%) scale(1);
+    transform: translate(0%, 0%) scale(1);
   }
 
   50% {
-    transform: translate(0%,0%) scale(1.2);
+    transform: translate(0%, 0%) scale(1.2);
   }
 
-  100%{
-    transform: translate(0%,0%) scale(1);
+  100% {
+    transform: translate(0%, 0%) scale(1);
   }
 }
 
 #formContainer2 {
- margin-top: 20vh;
+  margin-top: 20vh;
 }
 
 .formContainer {
@@ -224,6 +229,7 @@ li p {
   border-radius: 15px;
   position: relative;
 }
+
 .formContainer input {
   width: 100%;
   padding: 15px;
@@ -232,10 +238,12 @@ li p {
   background: rgb(228, 254, 224);
   border-radius: 15px;
 }
+
 .formContainer input:focus {
   background-color: rgb(177, 254, 182);
   outline: none;
 }
+
 .formContainer .btn {
   padding: 12px 20px;
   font-weight: bolder;
@@ -249,9 +257,11 @@ li p {
   opacity: 0.8;
   border-radius: 10px;
 }
+
 .formContainer .cancel {
   background-color: #003b00;
 }
+
 .formContainer .btn:hover,
 .openButton:hover {
   opacity: 1;
@@ -260,19 +270,26 @@ li p {
 
 @media screen and (max-width: 850px) {
   .formPopup {
-      padding-left: 25%;
-  }}
+    padding-left: 25%;
+  }
+}
+
 @media screen and (max-width: 500px) {
-      .formPopup {
-          padding-left: 15%;
-      }}
+  .formPopup {
+    padding-left: 15%;
+  }
+}
+
 @media screen and (max-width: 350px) {
-      .formPopup {
-          padding-left: 0%;
-      }}
+  .formPopup {
+    padding-left: 0%;
+  }
+}
+
 @media screen and (min-width: 1800px) {
-      .formPopup {
-            padding-left: 40vw;
-}}        
+  .formPopup {
+    padding-left: 40vw;
+  }
+}
 
 /* End of CSS For Pop-Up Window */
