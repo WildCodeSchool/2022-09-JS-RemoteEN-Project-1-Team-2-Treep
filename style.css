@@ -1,298 +1,144 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif
-}
+* , *::after, *::before {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+  }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-}
+  body{
+    margin: 0;
+  }
 
-/* footer css mobile 1st */
-.projcontainer {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  background-color: #F3F3F3;
-
-}
-
-.joincontainer {
-  display: flex;
-  flex-direction: column;
-  background-color: #F3F3F3;
-  align-items: center;
-}
-
-.joinsubcontainer {
-  background-color: #ffffff;
-  width: 80%;
-  margin-top: 40px;
-  text-align: center;
-}
-
-.contact {
-  text-align: center;
-}
-
-.openButton.white {
-  background-color: #ffffff;
-  color: #000;
-  border: 1px solid black;
-}
-
-
-.footer {
-  text-align: center;
-}
-
-.subcontainersocials li{
-  list-style-type: none;
-  /* text-align: center; */
-}
-
-.subcontainersocials {
-  display: flex;
-  flex-direction: row;
-}
-
-
-
-/* Timeline CSS */
-.timeline {
-  display: block;
-  margin-top: 250px;
-  padding: 15px;
-  grid-template-columns: 40% auto;
-  justify-content: center;
-}
-
-.timeline-u {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-top: 0px;
-  position: relative;
-  width: 100%;
-  padding: 0px;
-}
-
-li p {
-  transform: translateY(-10px);
-  opacity: 0;
-  padding: 0 100px;
-  transition: 1.5s;
-}
-
-.h-text {
-  display: none;
-}
-
-.date {
-  position: absolute;
-  top: -140px;
-  left: 25%;
-  opacity: 0;
-  transition: 1.5s;
-  font-size: 3rem;
-  font-weight: 900;
-  transform: translateX(0px) rotateZ(-90deg);
-}
-
-.date1 {
-  position: absolute;
-  top: -190px;
-  left: 12%;
-  /* opacity: 0; */
-  transition: 1.5s;
-  font-size: 5rem;
-  font-weight: 900;
-  transform: translateX(0px) rotateZ(-90deg);
-}
-
-.timeline-line {
-  background: rgb(228, 228, 228);
-  width: 100%;
-  height: 4px;
-  border-radius: 12px;
-  position: relative;
-  justify-self: end;
-}
-
-.timeline-point {
-  width: 15px;
-  height: 15px;
-  top: -40px;
-  left: 40%;
-  transition: 1.5s ease;
-  border: none;
-  position: absolute;
-  border-radius: 50%;
-  background: rgb(228, 228, 228);
-}
-
-.timeline-innerline {
-  position: absolute;
-  background: #000;
-  width: 0%;
-  height: 4px;
-  top: 0%;
-  left: 0%;
-  transition: 1s linear;
-  border-radius: 999px;
-}
 
 
 
 /* CSS FOR THE POP-UP FORM BELOW (INVISIBLE UNTIL BUTTON CLICKED)*/
 
-.topcont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  /* border:#003b00 solid 2px; */
-}
-
-.openButton {
-  border: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #000000;
-  color: white;
-  padding: 10px 10px;
-  cursor: pointer;
-}
-
-.mainPopup {
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-
-.close {
-  font-size: 40px;
-  color: #000000;
-  font-weight: 600;
-  display: inline-block;
-  transform: rotate(45deg);
-  cursor: pointer;
-  position: absolute;
-  top: -1%;
-  right: 3%;
-}
-
-.formPopup {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 10vh;
-  padding-left: 40vw;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 50p;
-  animation: open 0.5s forwards;
-}
-
-@keyframes open {
-  0% {
-    transform: translate(0%, 0%) scale(1);
+  .topcont{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border:#003b00 solid 2px; */
   }
 
-  50% {
-    transform: translate(0%, 0%) scale(1.2);
+
+
+  .openButton {
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #1cc922;
+    color: white;
+    border-radius: 10px;
+    padding: 14px 20px;
+    cursor: pointer;
   }
 
-  100% {
-    transform: translate(0%, 0%) scale(1);
+  .mainPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
   }
-}
 
-#formContainer2 {
-  margin-top: 20vh;
-}
+  .close {
+    font-size: 40px;
+    color: #000000;
+    font-weight: 600;
+    display: inline-block;
+    transform: rotate(45deg);
+    cursor: pointer;
+    position: absolute;
+    top:-1%;
+    right:3%;
+  }
 
-.formContainer {
-  max-width: 300px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 15px;
-  position: relative;
-}
-
-.formContainer input {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 20px 0;
-  border: none;
-  background: rgb(228, 254, 224);
-  border-radius: 15px;
-}
-
-.formContainer input:focus {
-  background-color: rgb(177, 254, 182);
-  outline: none;
-}
-
-.formContainer .btn {
-  padding: 12px 20px;
-  font-weight: bolder;
-  font-size: larger;
-  border: none;
-  background-color: #48ce00;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 15px;
-  opacity: 0.8;
-  border-radius: 10px;
-}
-
-.formContainer .cancel {
-  background-color: #003b00;
-}
-
-.formContainer .btn:hover,
-.openButton:hover {
-  opacity: 1;
-}
-
-
-@media screen and (max-width: 850px) {
   .formPopup {
-    padding-left: 25%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .formPopup {
-    padding-left: 15%;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .formPopup {
-    padding-left: 0%;
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  .formPopup {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    padding-top: 10vh; 
     padding-left: 40vw;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50p;
+    animation: open 0.5s forwards;
   }
-}
 
-/* End of CSS For Pop-Up Window */
+  @keyframes open {
+    0% {
+      transform: translate(0%,0%) scale(1);
+    }
+
+    50% {
+      transform: translate(0%,0%) scale(1.2);
+    }
+
+    100%{
+      transform: translate(0%,0%) scale(1);
+    }
+  }
+
+  #formContainer2 {
+   margin-top: 20vh;
+  }
+
+  .formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    position: relative;
+  }
+  .formContainer input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: rgb(228, 254, 224);
+    border-radius: 15px;
+  }
+  .formContainer input:focus {
+    background-color: rgb(177, 254, 182);
+    outline: none;
+  }
+  .formContainer .btn {
+    padding: 12px 20px;
+    font-weight: bolder;
+    font-size: larger;
+    border: none;
+    background-color: #48ce00;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+  .formContainer .cancel {
+    background-color: #003b00;
+  }
+  .formContainer .btn:hover,
+  .openButton:hover {
+    opacity: 1;
+  }
+
+  
+@media screen and (max-width: 850px) {
+    .formPopup {
+        padding-left: 25%;
+    }}
+@media screen and (max-width: 500px) {
+        .formPopup {
+            padding-left: 15%;
+        }}
+@media screen and (max-width: 350px) {
+        .formPopup {
+            padding-left: 0%;
+        }}
+@media screen and (min-width: 1800px) {
+        .formPopup {
+              padding-left: 40vw;
+}}        
