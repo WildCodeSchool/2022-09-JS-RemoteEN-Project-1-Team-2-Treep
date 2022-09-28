@@ -1,8 +1,144 @@
-*, *::before, *::after {
+* , *::after, *::before {
     box-sizing: border-box;
-}
+    font-family:Arial, Helvetica, sans-serif
+  }
 
-body {
+  body{
     margin: 0;
-}
+  }
 
+
+
+
+/* CSS FOR THE POP-UP FORM BELOW (INVISIBLE UNTIL BUTTON CLICKED)*/
+
+  .topcont{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border:#003b00 solid 2px; */
+  }
+
+
+
+  .openButton {
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #1cc922;
+    color: white;
+    border-radius: 10px;
+    padding: 14px 20px;
+    cursor: pointer;
+  }
+
+  .mainPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  .close {
+    font-size: 40px;
+    color: #000000;
+    font-weight: 600;
+    display: inline-block;
+    transform: rotate(45deg);
+    cursor: pointer;
+    position: absolute;
+    top:-1%;
+    right:3%;
+  }
+
+  .formPopup {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    padding-top: 10vh; 
+    padding-left: 40vw;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50p;
+    animation: open 0.5s forwards;
+  }
+
+  @keyframes open {
+    0% {
+      transform: translate(0%,0%) scale(1);
+    }
+
+    50% {
+      transform: translate(0%,0%) scale(1.2);
+    }
+
+    100%{
+      transform: translate(0%,0%) scale(1);
+    }
+  }
+
+  #formContainer2 {
+   margin-top: 20vh;
+  }
+
+  .formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    position: relative;
+  }
+  .formContainer input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: rgb(228, 254, 224);
+    border-radius: 15px;
+  }
+  .formContainer input:focus {
+    background-color: rgb(177, 254, 182);
+    outline: none;
+  }
+  .formContainer .btn {
+    padding: 12px 20px;
+    font-weight: bolder;
+    font-size: larger;
+    border: none;
+    background-color: #48ce00;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+  .formContainer .cancel {
+    background-color: #003b00;
+  }
+  .formContainer .btn:hover,
+  .openButton:hover {
+    opacity: 1;
+  }
+
+  
+@media screen and (max-width: 850px) {
+    .formPopup {
+        padding-left: 25%;
+    }}
+@media screen and (max-width: 500px) {
+        .formPopup {
+            padding-left: 15%;
+        }}
+@media screen and (max-width: 350px) {
+        .formPopup {
+            padding-left: 0%;
+        }}
+@media screen and (min-width: 1800px) {
+        .formPopup {
+              padding-left: 40vw;
+}}        
