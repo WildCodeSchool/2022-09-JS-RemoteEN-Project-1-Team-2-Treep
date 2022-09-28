@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
             <div class="subcontainer hero">
                     <h1>TITLE</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquam.</p>
-                    <button>Plant a tree</button>
+                    <button class="openButton" onclick="openForm()">Donate</button>
             </div>        
             <div class="subcontainer socials">
                 <ul>
@@ -60,22 +61,22 @@
             <div class="joinsubcontainer">
                 <h3>Title card 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda sapiente ipsum magni, facilis unde optio voluptatibus!?</p>
-                <button>Plant a branch</button>
             </div>
-            <div class="joinsubcontainer"></div>
+            <div class="joinsubcontainer">
                 <h3>Title card 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda sapiente ipsum magni, facilis unde optio voluptatibus!?</p>
-                <button>Plant a bush</button>
-            <div class="joinsubcontainer"></div>
+            </div>
+            <div class="joinsubcontainer">
                 <h3>Title card 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda sapiente ipsum magni, facilis unde optio voluptatibus!?</p>
-                <button>Plant a tree</button>
+            </div>
+            <button>Donate</button>
         </div>
     </section>
 
     <section class="contact">
         <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet aspernatur ex at ea laboriosam?!</h4>
-        <button class="contactus">Contact Us</button>
+        <button class="openButton" onclick="openForm()">Contact Us</button>
     </section>
 
     <footer>
@@ -83,5 +84,38 @@
         <div>Copyright 2022</div>
     </footer>
 
+    <div class="mainPopup">
+        <div class="formPopup" id="popupForm">
+          <div class="formContainer">
+  
+            <span type="submit" class="close" onclick="closeForm()">+</span>
+            <h2>Plant Some Trees!</h2>
+            <label for="name"><strong>Name</strong></label>
+            <input type="text" id="name" placeholder="Your Name" name="name">
+  
+            <label for="email"><strong>E-Mail</strong></label>
+            <input type="text" id="email" placeholder="Your E-Mail" name="email">
+  
+            <label for="treenum"><strong>Tree(s) Planted</strong></label>
+            <input type="text" id="treenum" placeholder="Number of Tree(s) Planted" name="treenum">
+  
+            <label for="nametree"><strong>Name of your Tree(s) (Optional)</strong></label>
+            <input type="text" id="nametree" placeholder="Your Tree(s)' Name(s)" name="nametree">
+  
+            <button class="btn" id="thanksbutton">Plant</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mainPopup" id="mainPopup2">
+        <div class="formPopup" id="popupForm2">
+          <div class="formContainer" id="formContainer2">
+            <h2 id="message"></h2>
+            <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+          </div>
+        </div>
+      </div>
+
+<script src="script.js"></script>
 </body>
 </html>
