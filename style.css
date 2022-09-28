@@ -1,144 +1,108 @@
-* , *::after, *::before {
-    box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif
-  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 50px;
+  min-height: 100vh;
+}
+h1 {
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+section {
+  margin: 20px 0;
+}
+.timeline {
+  display: block;  
+  margin-top: 150px;
+  padding: 15px;
+  grid-template-columns: 40% auto;
+  justify-content: center;
+}
 
-  body{
-    margin: 0;
-  }
+ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-top: 0px;
+  position: relative;
+  width: 100%;
+  padding: 0px;
+}
+li p {
+  transform: translateY(-10px);
+  opacity: 0;  
+  padding: 0 100px;
+  transition: 1.5s;
+}
 
-
-
-
-/* CSS FOR THE POP-UP FORM BELOW (INVISIBLE UNTIL BUTTON CLICKED)*/
-
-  .topcont{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* border:#003b00 solid 2px; */
-  }
-
-
-
-  .openButton {
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    background-color: #1cc922;
-    color: white;
-    border-radius: 10px;
-    padding: 14px 20px;
-    cursor: pointer;
-  }
-
-  .mainPopup {
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-
-  .close {
-    font-size: 40px;
-    color: #000000;
-    font-weight: 600;
-    display: inline-block;
-    transform: rotate(45deg);
-    cursor: pointer;
-    position: absolute;
-    top:-1%;
-    right:3%;
-  }
-
-  .formPopup {
+.h-text {
     display: none;
-    position: fixed; 
-    z-index: 1;
-    padding-top: 10vh; 
-    padding-left: 40vw;
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    background-color: rgba(0,0,0,0.6);
-    border-radius: 50p;
-    animation: open 0.5s forwards;
-  }
+}
 
-  @keyframes open {
-    0% {
-      transform: translate(0%,0%) scale(1);
-    }
+.date {
+  position: absolute;
+  top: -140px;
+  left: 25%;
+  opacity: 0;
+  transition: 1.5s;
+  font-size: 3rem;
+  font-weight: 900;
+  transform: translateX(0px) rotateZ(-90deg);
+}
 
-    50% {
-      transform: translate(0%,0%) scale(1.2);
-    }
+.date1 {
+    position: absolute;
+    top: -190px;
+    left: 12%;
+    /* opacity: 0; */
+    transition: 1.5s;
+    font-size: 5rem;
+    font-weight: 900;
+    transform: translateX(0px) rotateZ(-90deg);
+}
 
-    100%{
-      transform: translate(0%,0%) scale(1);
-    }
-  }
+.timeline-line {
+  background: rgb(228, 228, 228);
+  width: 100%;
+  height: 4px;
+  border-radius: 12px;
+  position: relative;
+  justify-self: end;
+}
 
-  #formContainer2 {
-   margin-top: 20vh;
-  }
+.timeline-point {
+  width: 15px;
+  height: 15px;
+  top: -40px;
+  left: 40%;
+  transition: 1.5s ease;
+  border: none;
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(228, 228, 228);
+}
 
-  .formContainer {
-    max-width: 300px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 15px;
-    position: relative;
-  }
-  .formContainer input {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 20px 0;
-    border: none;
-    background: rgb(228, 254, 224);
-    border-radius: 15px;
-  }
-  .formContainer input:focus {
-    background-color: rgb(177, 254, 182);
-    outline: none;
-  }
-  .formContainer .btn {
-    padding: 12px 20px;
-    font-weight: bolder;
-    font-size: larger;
-    border: none;
-    background-color: #48ce00;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 15px;
-    opacity: 0.8;
-    border-radius: 10px;
-  }
-  .formContainer .cancel {
-    background-color: #003b00;
-  }
-  .formContainer .btn:hover,
-  .openButton:hover {
-    opacity: 1;
-  }
+.timeline-innerline {
+  position: absolute;
+  background: #000;
+  width: 0%;
+  height: 4px;
+  top: 0%;
+  left: 0%;
+  transition: 1s linear;
+  border-radius: 999px;
+}
 
-  
-@media screen and (max-width: 850px) {
-    .formPopup {
-        padding-left: 25%;
-    }}
-@media screen and (max-width: 500px) {
-        .formPopup {
-            padding-left: 15%;
-        }}
-@media screen and (max-width: 350px) {
-        .formPopup {
-            padding-left: 0%;
-        }}
-@media screen and (min-width: 1800px) {
-        .formPopup {
-              padding-left: 40vw;
-}}        
+@media screen and (min-width: 728px) {
+
+}
