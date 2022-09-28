@@ -151,4 +151,3 @@ function resizeEnd() {
   i = 0;
   slowLoop();
 }
-
