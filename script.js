@@ -47,10 +47,10 @@ const line = document.querySelector(".timeline-innerline");
 
 let i = 0;
 let i2 = 1;
-let target1 = document.querySelector(".timeline ul");
-let target2 = document.querySelectorAll(".timeline ul li");
+let target1 = document.querySelector(".timeline .timeline-u");
+let target2 = document.querySelectorAll(".timeline .timeline-u li");
 
-const timeline_events = document.querySelectorAll("ul li");
+const timeline_events = document.querySelectorAll(".timeline-u li");
 
 function showTime(e) {
   e.setAttribute("done", "true");

@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family:Arial, Helvetica, sans-serif
 }
+
 body {
   padding: 50px;
   min-height: 100vh;
@@ -21,13 +22,13 @@ section {
 }
 .timeline {
   display: block;  
-  margin-top: 150px;
+  margin-top: 250px;
   padding: 15px;
   grid-template-columns: 40% auto;
   justify-content: center;
 }
 
-ul {
+.timeline-u {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -239,3 +240,4 @@ li p {
       .formPopup {
             padding-left: 40vw;
 }}        
+
