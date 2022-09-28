@@ -1,121 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
 </head>
+
 <body>
 
-    <header>
-        <div class="maincontainer">
-            <nav class="subcontainer logo">
-                <img>LOGO</img>
-                    <ul>
-                        <li>About</li>
-                        <li>Project</li>
-                        <li>Join Us</li>
-                    </ul>
-            </nav>
-            <div class="subcontainer hero">
-                    <h1>TITLE</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquam.</p>
-                    <button class="openButton" onclick="openForm()">Donate</button>
-            </div>        
-            <div class="subcontainer socials">
-                <ul>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <section class="about">
-        <div>
-            <h2>About or The problem</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt debitis soluta reprehenderit at perspiciatis quidem amet esse officiis.</p>
-            <div class="numberscontainer">
-                <div>Date 1(to think about later)</div>
-                <div>Date 2</div>
-                <div>Date 3</div>
-                <div>Date 4</div>
-                <div>Date 5</div>
-            </div> 
-        </div>
-    </section>
-
-    <section class="project">
-        <div class="projcontainer">
-            <h2>The solution</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat neque aperiam magnam aliquid repudiandae.</p>
-            <img>Image</img>
-        </div>
-    </section>
-
-    <section class="join">
-        <div class="joincontainer">
-            <div class="joinsubcontainer">
-                <h3>Title card 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda sapiente ipsum magni, facilis unde optio voluptatibus!?</p>
-            </div>
-            <div class="joinsubcontainer">
-                <h3>Title card 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda sapiente ipsum magni, facilis unde optio voluptatibus!?</p>
-            </div>
-            <div class="joinsubcontainer">
-                <h3>Title card 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda sapiente ipsum magni, facilis unde optio voluptatibus!?</p>
-            </div>
-            <button class="openButton" onclick="openForm()">Donate</button>
-        </div>
-    </section>
-
-    <section class="contact">
-        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet aspernatur ex at ea laboriosam?!</h4>
-        <button>Contact Us</button>
-    </section>
-
-    <footer>
+  <header>
+    <div class="maincontainer">
+      <navav class="subcontainer logo">
         <img>LOGO</img>
-        <div>Copyright 2022</div>
-    </footer>
-
-    <div class="mainPopup">
-        <div class="formPopup" id="popupForm">
-          <div class="formContainer">
-  
-            <span type="submit" class="close" onclick="closeForm()">+</span>
-            <h2>Plant Some Trees!</h2>
-            <label for="name"><strong>Name</strong></label>
-            <input type="text" id="name" placeholder="Your Name" name="name">
-  
-            <label for="email"><strong>E-Mail</strong></label>
-            <input type="text" id="email" placeholder="Your E-Mail" name="email">
-  
-            <label for="treenum"><strong>Tree(s) Planted</strong></label>
-            <input type="text" id="treenum" placeholder="Number of Tree(s) Planted" name="treenum">
-  
-            <label for="nametree"><strong>Name of your Tree(s) (Optional)</strong></label>
-            <input type="text" id="nametree" placeholder="Your Tree(s)' Name(s)" name="nametree">
-  
-            <button class="btn" id="thanksbutton">Plant</button>
-          </div>
+        <ul>
+          <li>About</li>
+          <li>Project</li>
+          <li>Join Us</li>
+        </ul>
+        </nav>
+        <div class="subcontainer hero">
+          <h1>TITLE</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquam.</p>
+          <button class="openButton" onclick="openForm()">Donate</button>
         </div>
-      </div>
-  
-      <div class="mainPopup" id="mainPopup2">
-        <div class="formPopup" id="popupForm2">
-          <div class="formContainer" id="formContainer2">
-            <h2 id="message"></h2>
-            <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
-          </div>
-        </div>
-      </div>
 
-<script src="script.js"></script>
+    </div>
+  </header>
+
+  <section class="about">
+    <div>
+      <h2>About or The problem</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt debitis soluta reprehenderit at perspiciatis
+        quidem amet esse officiis.</p>
+      <div class="numberscontainer">
+        <div>Date 1(to think about later)</div>
+        <div>Date 2</div>
+        <div>Date 3</div>
+        <div>Date 4</div>
+        <div>Date 5</div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Timeline HTML -->
+  <section class="timeline">
+    <div class="timeline-line">
+      <span class="timeline-innerline"></span>
+    </div>
+
+    <ul class="timeline-u">
+      <li>
+        <span class="timeline-point"></span>
+        <span class="date">1000</span>
+        <p>Title</p>
+        <p class="h-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odio ex distinctio quia! Ad qui
+          aliquam enim quos maxime, culpa at sapiente quasi optio vero! Quis temporibus delectus accusamus nostrum.</p>
+      </li>
+      <li>
+        <span class="timeline-point"></span>
+        <span class="date">1000</span>
+        <p>Title</p>
+      </li>
+      <li>
+        <span class="timeline-point"></span>
+        <span class="date date1">2022</span>
+        <p>Title</p>
+        <p class="h-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam in, eius quis, est
+          necessitatibus suscipit blanditiis corporis a reprehenderit odio laborum quam nostrum, natus molestiae
+          quaerat? Vel tempore optio doloremque.</p>
+      </li>
+      <li>
+        <span class="timeline-point"></span>
+        <span class="date">1000</span>
+        <p>Title</p>
+        <p class="h-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos et commodi, possimus
+          omnis culpa deserunt repudiandae tenetur, distinctio, veniam eveniet quisquam consequatur debitis laborum
+          ducimus id ratione similique error dolorem?</p>
+      </li>
+      <li>
+        <span class="timeline-point"></span>
+        <span class="date">1000</span>
+        <p>Title</p>
+        <p class="h-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptas, nihil modi minima
+          temporibus vel fugiat porro nostrum magni quas libero sequi ab quis rem ad repellendus mollitia voluptatibus
+          nam.</p>
+      </li>
+    </ul>
+  </section>
+  <!-- End of Timeline HTML -->
+
+  <section class="project">
+    <div class="projcontainer">
+      <h2>The solution</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat neque aperiam magnam aliquid repudiandae.
+      </p>
+      <img
+        src="https://lh3.googleusercontent.com/DsDkIBvXVP_WfBAeKLAyZvVp0JxEamJADNm56URsq8fZ6R0jRDBKs_R52_wy3kgkyD_TDpAqrCLktkR26QqIY7TsvXg0Ork-2qlNZ6d62nzxHsJ0mvgFgDMgmKs4LPsmdTp60RZ64A=w2400"></img>
+    </div>
+  </section>
+
+  <section class="join">
+    <div class="joincontainer">
+      <div class="joinsubcontainer">
+        <h3>Step 1</h3>
+        <p>TITLE</p>
+      </div>
+      <div class="joinsubcontainer">
+        <h3>Step 2</h3>
+        <p>TITLE</p>
+      </div>
+      <div class="joinsubcontainer">
+        <h3>Step 3</h3>
+        <p>TITLE</p>
+      </div>
+      <button class="openButton" onclick="openForm()">Plant a tree</button>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet aspernatur ex at ea laboriosam?!</h4>
+    <button class="openButton white">Contact Us</button>
+  </section>
+
+  <div>
+    <ul class="subcontainersocials">
+      <li>Twitter</li>
+      <li>Instagram</li>
+      <li>Facebook</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <img>LOGO</img>
+    <div>© 2022</div>
+  </footer>
+
+  <!-- Pop-Up Form HTML -->
+  <div class="mainPopup">
+    <div class="formPopup" id="popupForm">
+      <div class="formContainer">
+
+        <span type="submit" class="close" onclick="closeForm()">+</span>
+        <h2>Plant Some Trees!</h2>
+        <label for="name"><strong>Name</strong></label>
+        <input type="text" id="name" placeholder="Your Name" name="name">
+
+        <label for="email"><strong>E-Mail</strong></label>
+        <input type="text" id="email" placeholder="Your E-Mail" name="email">
+
+        <label for="treenum"><strong>Tree(s) Planted</strong></label>
+        <input type="text" id="treenum" placeholder="Number of Tree(s) Planted" name="treenum">
+
+        <label for="nametree"><strong>Name of your Tree(s) (Optional)</strong></label>
+        <input type="text" id="nametree" placeholder="Your Tree(s)' Name(s)" name="nametree">
+
+        <button class="btn" id="thanksbutton">Plant</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainPopup" id="mainPopup2">
+    <div class="formPopup" id="popupForm2">
+      <div class="formContainer" id="formContainer2">
+        <h2 id="message"></h2>
+        <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+      </div>
+    </div>
+  </div>
+  <!--End of Pop-Up Form HTML -->
+
+  <script src="./script.js"></script>
 </body>
+
 </html>
