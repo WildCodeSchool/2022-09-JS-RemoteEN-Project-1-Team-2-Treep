@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
 
@@ -13,16 +16,25 @@
         <div class="background"> 
         <div class="maincontainer">
             <nav class="subcontainer logo">
-                <img>LOGO</img>
-                    <ul>
-                        <li>About</li>
-                        <li>Project</li>
-                        <li>Join Us</li>
+                <img class="logo" src ="./img/Treep_logo.png" alt="Treep logo"/>
+                <button class="hamburger">
+                    <i class="menuIcon material-symbols-outlined">
+                      menu</i>
+                      <i class="closeIcon material-symbols-outlined">
+                          close
+                          </i>
+                  </button>
+                     
+                <ul class="menu">
+                        <li><a class="menuItem" href="#">About</a></li>
+                        <li><a class="menuItem" href="#">Project</a></li>
+                        <li><a class="menuItem" href="#">Join us</a></li>
                     </ul>
+                    
             </nav>
             <div class="subcontainer hero">
-                    <h1>TITLE</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquam.</p>
+                    <h1>Plant a tree today</h1>
+                    <p>The climate crisis has been proven to be the main cause of wildfires leading to the loss of 9.3 millions hectares of tree cover globally. If we don’t do anything, wildfires will increase by 30% in 2050. At Treep, we made is our life-long goal to repopulate Mother Earth.</p>
                     <button class="openButton" onclick="openForm()">Donate</button>
             </div>        
             <div class="subcontainer socials">
@@ -119,5 +131,6 @@
       </div>
 
 <script src="script.js"></script>
+<script src="menu.js"></script>
 </body>
 </html>
