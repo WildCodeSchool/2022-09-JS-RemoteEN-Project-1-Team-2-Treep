@@ -11,8 +11,6 @@ margin: 0;
 }
 
 /* footer css mobile 1st */
-
-
 .projcontainer {
   display: flex;
   flex-direction: column;
@@ -41,6 +39,23 @@ margin: 0;
   color: #000;
   border: 1px solid black;
 }
+
+
+.footer {
+  text-align: center;
+}
+
+.subcontainersocials li{
+  list-style-type: none;
+  /* text-align: center; */
+}
+
+.subcontainersocials {
+  display: flex;
+  flex-direction: row;
+}
+
+
 
 /* Timeline CSS */
 .timeline {
@@ -131,18 +146,6 @@ li p {
   border-radius: 999px;
 }
 
-.footer {
-  text-align: center;
-}
-
-.subcontainersocials li{
-  list-style-type: none;
-}
-
-.subcontainersocials {
-  display: flex;
-  flex-direction: row;
-}
 
 
 /* CSS FOR THE POP-UP FORM BELOW (INVISIBLE UNTIL BUTTON CLICKED)*/
