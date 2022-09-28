@@ -7,6 +7,57 @@
     margin: 0;
   }
 
+/*CSS for the hero mobile version*/
+
+.background {
+    background: url(https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80);
+}
+
+.maincontainer {
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+nav.subcontainer.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subcontainer.hero {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subcontainer.socials {
+    display: none;
+}
+
+li{
+    list-style: none;
+}
+
+button {
+    margin-top: 20%;
+    height: 6vh;
+    width: 40vw;
+}
+
+h1 {
+    font-size: 4em;
+}
+
 
 
 
