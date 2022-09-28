@@ -10,13 +10,39 @@ body {
 margin: 0;
 }
 
-h1 {
-  text-decoration: underline;
-  margin-bottom: 50px;
+/* footer css mobile 1st */
+
+
+.projcontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.263);
 }
-section {
-  margin: 20px 0;
+
+.joincontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(188, 188, 188, 0.995);
+  align-items: center;
 }
+.joinsubcontainer {
+  background-color: #ffffff;
+  width: 80%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+}
+
+.openButton.white {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid black;
+}
+
+/* Timeline CSS */
 .timeline {
   display: block;  
   margin-top: 250px;
@@ -105,6 +131,18 @@ li p {
   border-radius: 999px;
 }
 
+.footer {
+  text-align: center;
+}
+
+.subcontainersocials li{
+  list-style-type: none;
+}
+
+.subcontainersocials {
+  display: flex;
+  flex-direction: row;
+}
 
 
 /* CSS FOR THE POP-UP FORM BELOW (INVISIBLE UNTIL BUTTON CLICKED)*/
@@ -120,12 +158,11 @@ li p {
 
 .openButton {
   border: none;
-  border-radius: 5px;
   margin-top: 20px;
-  background-color: #1cc922;
+  margin-bottom: 20px;
+  background-color: #000000;
   color: white;
-  border-radius: 10px;
-  padding: 14px 20px;
+  padding: 10px 10px;
   cursor: pointer;
 }
 
