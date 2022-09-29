@@ -82,10 +82,10 @@ body {
     height: auto;
 }
 .background {
-    background: url(./img/hero-background.jpg) no-repeat;
-    background-position: center;
+    background: url(./img/IMG_0779.jpg) no-repeat;
+    background-position: bottom;
     background-attachment: fixed;
-    background-size: 100vh;
+    background-size: auto;
 }
 
 .maincontainer {
@@ -406,6 +406,9 @@ z-index: 4;
   opacity: 1;
 }
 
+@media (max-width: 390px) {
+  
+}
 
 @media screen and (max-width: 850px) {
   .formPopup {
@@ -413,10 +416,12 @@ z-index: 4;
   }
 }
 
+
 @media screen and (max-width: 500px) {
   .formPopup {
     padding-left: 15%;
   }
+
 }
 
 @media screen and (max-width: 350px) {
@@ -430,5 +435,7 @@ z-index: 4;
     padding-left: 40vw;
   }
 }
+
+
 
 /* End of CSS For Pop-Up Window */
