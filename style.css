@@ -11,54 +11,6 @@ body {
   min-height: 100vh;
 }
 
-/* footer css mobile 1st */
-.projcontainer {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  background-color: #F3F3F3;
-
-}
-
-.joincontainer {
-  display: flex;
-  flex-direction: column;
-  background-color: #F3F3F3;
-  align-items: center;
-}
-
-.joinsubcontainer {
-  background-color: #ffffff;
-  width: 80%;
-  margin-top: 40px;
-  text-align: center;
-}
-
-.contact {
-  text-align: center;
-}
-
-.openButton.white {
-  background-color: #ffffff;
-  color: #000;
-  border: 1px solid black;
-}
-
-
-.footer {
-  text-align: center;
-}
-
-.subcontainersocials li{
-  list-style-type: none;
-  /* text-align: center; */
-}
-
-.subcontainersocials {
-  display: flex;
-  flex-direction: row;
-}
-
 /*CSS for the hero mobile version TEST FOR REBASE*/
 .menuIcon.material-symbols-outlined {
     font-family: 'Material Symbols Outlined';
@@ -123,6 +75,79 @@ li{
     list-style: none;
 }
 
+h1 {
+  font-size: 5em;
+  line-height: 1.3em;
+  font-family: "Montserrat";
+  font-weight: 900;
+  letter-spacing: -0.09em;
+}
+
+p{
+  font-size: 1em;
+  line-height: 1.5em;  
+  font-family: 'Montserrat';
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  margin-top: 2%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.closeIcon.material-symbols-outlined {
+display: none;
+font-size: 4em;
+z-index: 4;
+}
+
+.menu {
+  position: fixed;
+  transform: translateX(100%);
+  transition: transform 1s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: white;
+  margin: 0;
+  list-style: none;
+  padding-top: 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.showMenu {
+  transform: translateX(0);
+  transition: transform 1s;
+  background-color: white;
+  color: white;
+  height: 100vh;
+  overflow-y: hidden;
+  margin: 0;
+  z-index: 0;
+}
+
+.menuItem{
+
+  text-decoration:none;
+  color: #000000;
+  font-size: 5em;
+  line-height: 1.3em;
+  font-family: "Montserrat";
+  font-weight: 900;
+  letter-spacing: -0.09em;
+}
 
 /* Timeline CSS */
 .timeline {
@@ -143,7 +168,7 @@ li{
   padding: 0;
 }
 
-li {
+.timeline-u li {
   margin-top: 0px;
   position: relative;
   width: 100%;
@@ -215,79 +240,55 @@ li p {
   border-radius: 999px;
 }
 
-h1 {
-    font-size: 5em;
-    line-height: 1.3em;
-    font-family: "Montserrat";
-    font-weight: 900;
-    letter-spacing: -0.09em;
+
+/* footer css mobile 1st */
+.projcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #F3F3F3;
+
 }
 
-p{
-    font-size: 1em;
-    line-height: 1.5em;  
-    font-family: 'Montserrat';
+.joincontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F3F3F3;
+  align-items: center;
 }
 
-.hamburger {
-    position: fixed;
-    z-index: 1;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    margin-top: 2%;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
+.joinsubcontainer {
+  background-color: #ffffff;
+  width: 80%;
+  margin-top: 40px;
+  text-align: center;
+}
 
-  .closeIcon.material-symbols-outlined {
-display: none;
-font-size: 4em;
-z-index: 4;
-  }
+.contact {
+  text-align: center;
+}
 
-  .menu {
-    position: fixed;
-    transform: translateX(100%);
-    transition: transform 1s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    background-color: white;
-    margin: 0;
-    list-style: none;
-    padding-top: 3rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-  }
+.openButton.white {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid black;
+}
 
-  .showMenu {
-    transform: translateX(0);
-    transition: transform 1s;
-    background-color: white;
-    color: white;
-    height: 100vh;
-    overflow-y: hidden;
-    margin: 0;
-    z-index: 0;
-  }
 
-  .menuItem{
+.footer {
+  text-align: center;
+}
 
-    text-decoration:none;
-    color: #000000;
-    font-size: 5em;
-    line-height: 1.3em;
-    font-family: "Montserrat";
-    font-weight: 900;
-    letter-spacing: -0.09em;
-  }
+.subcontainersocials li{
+  list-style-type: none;
+  /* text-align: center; */
+}
+
+.subcontainersocials {
+  display: flex;
+  flex-direction: row;
+}
+
 
 /* CSS FOR THE POP-UP FORM BELOW (INVISIBLE UNTIL BUTTON CLICKED)*/
 
