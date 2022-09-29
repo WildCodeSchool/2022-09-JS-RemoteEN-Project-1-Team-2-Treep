@@ -151,14 +151,14 @@ z-index: 4;
 
 /* Timeline CSS */
 .timeline {
-  display: block;
+  display: block;  
   margin-top: 250px;
   padding: 15px;
   grid-template-columns: 40% auto;
   justify-content: center;
 }
 
-.timeline-u {
+.flex-container {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -167,23 +167,21 @@ z-index: 4;
   list-style: none;
   padding: 0;
 }
-
-.timeline-u li {
+.list-items {
   margin-top: 0px;
   position: relative;
   width: 100%;
   padding: 0px;
 }
-
 li p {
   transform: translateY(-10px);
-  opacity: 0;
+  opacity: 0;  
   padding: 0 100px;
   transition: 1.5s;
 }
 
 .h-text {
-  display: none;
+    display: none;
 }
 
 .date {
@@ -198,14 +196,14 @@ li p {
 }
 
 .date1 {
-  position: absolute;
-  top: -190px;
-  left: 12%;
-  /* opacity: 0; */
-  transition: 1.5s;
-  font-size: 5rem;
-  font-weight: 900;
-  transform: translateX(0px) rotateZ(-90deg);
+    position: absolute;
+    top: -190px;
+    left: 12%;
+    /* opacity: 0; */
+    transition: 1.5s;
+    font-size: 5rem;
+    font-weight: 900;
+    transform: translateX(0px) rotateZ(-90deg);
 }
 
 .timeline-line {
@@ -239,7 +237,6 @@ li p {
   transition: 1s linear;
   border-radius: 999px;
 }
-
 
 /* footer css mobile 1st */
 .projcontainer {
@@ -412,6 +409,64 @@ li p {
   .formPopup {
     padding-left: 25%;
   }
+  /* Timeline mobile*/
+  body {
+    padding: 20px;
+  }
+
+  .flex-container {
+    display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: stretch;
+      align-content: stretch;
+    }
+
+
+  .h-text {
+    display:contents;
+  }
+  
+  .timeline {
+    padding: 0;
+}
+
+  .timeline-line {
+    display:none;
+  }
+  
+  .timeline-point {
+    display: none;
+
+  }
+  .date {
+    top: 0;
+    left: 0;    
+    font-size: 2.5rem;
+    transform: translateX(0px) rotateZ(0deg);
+  }
+
+  .date1 {
+    top: 0;
+    left: 0;
+    font-size: 2.5rem;
+    transform: translateX(0px) rotateZ(0deg);
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-point {
+    display: none;
+  }
+
+  .h-text {
+    display: contents;
+    font-size: 1rem;
+  }
+
 }
 
 @media screen and (max-width: 500px) {

@@ -45,38 +45,38 @@ function closeForm2() {
 
 const line = document.querySelector(".timeline-innerline");
 
-let i = 0;
-let i2 = 1;
-let target1 = document.querySelector(".timeline .timeline-u");
-let target2 = document.querySelectorAll(".timeline .timeline-u li");
+let a = 0;
+let a2 = 1;
+let target1 = document.querySelector(".timeline .flex-container");
+let target2 = document.querySelectorAll(".timeline .flex-container li");
 
-const timeline_events = document.querySelectorAll(".timeline-u li");
+const timeline_events = document.querySelectorAll(".flex-container li");
 
-function showTime(e) {
-  e.setAttribute("done", "true");
-  e.querySelector(".timeline-point").style.background = "black";
-  e.querySelector(".date").style.opacity = "100%";
-  e.querySelector("p").style.opacity = "100%";
-  e.querySelector("p").style.transform = "translateY(0px)";
+function showTime(event) {
+  event.setAttribute("done", "true");
+  event.querySelector(".timeline-point").style.background = "black";
+  event.querySelector(".date").style.opacity = "100%";
+  event.querySelector("p").style.opacity = "100%";
+  event.querySelector("p").style.transform = "translateY(0px)";
 }
 
-function hideTime(e) {
-  e.removeAttribute("done");
-  e.querySelector(".timeline-point").style.background = "black";
-  e.querySelector(".date").style.opacity = "0%";
-  e.querySelector("p").style.opacity = "0%";
-  e.querySelector("p").style.transform = "translateY(-10px)";
+function hideTime(event) {
+  event.removeAttribute("done");
+  event.querySelector(".timeline-point").style.background = "black";
+  event.querySelector(".date").style.opacity = "0%";
+  event.querySelector("p").style.opacity = "0%";
+  event.querySelector("p").style.transform = "translateY(-10px)";
 }
 
 function slowLoop() {
   setTimeout(function () {
-    showTime(timeline_events[i]);
-    timelineProgress(i + 1);
-    i++;
-    if (i < timeline_events.length) {
+    showTime(timeline_events[a]);
+    timelineProgress(a + 1);
+    a++;
+    if (a < timeline_events.length) {
       slowLoop();
     }
-  }, 800);
+  }, 500);
 }
 
 
@@ -99,8 +99,8 @@ let observer = new IntersectionObserver(
           slowLoop();
         } else {
           showTime(entry.target);
-          timelineProgress(i2);
-          i2++;
+          timelineProgress(a2);
+          a2++;
         }
         observer.unobserve(entry.target);
       }
@@ -117,37 +117,3 @@ if (window.matchMedia("(min-width: 728px)").matches) {
   });
 }
 
-
-timeline_events.forEach((li, index) => {
-  li.addEventListener("click", () => {
-    if (li.getAttribute("done")) {
-      timelineProgress(index);
-
-      // hide all timeline events from last upto the point clicked
-      timeline_events.forEach((ev, idx) => {
-        if (idx >= index) {
-          hideTime(ev);
-        }
-      });
-    } else {
-      timelineProgress(index + 1);
-      // show all timeline events from first upto the point clicked
-      timeline_events.forEach((ev, idx) => {
-        if (idx <= index) {
-          showTime(ev);
-        }
-      });
-    }
-  });
-});
-
-var doit;
-window.addEventListener("resize", () => {
-  clearTimeout(doit);
-  doit = setTimeout(resizeEnd, 1200);
-});
-
-function resizeEnd() {
-  i = 0;
-  slowLoop();
-}
