@@ -477,7 +477,7 @@ h4 {
     color: white;
     border: none;
     background-color: #000000;
-
+    cursor: pointer;
 }
 
 .mainPopup {
@@ -576,10 +576,59 @@ h4 {
   opacity: 1;
 }
 
+
+/* Desktop Version Footer */
+
+@media screen and (min-width: 1000px){
+  .subcontainersocials {
+    display: none;
+  }
+
+  .joincontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 30px;
+  }
+
+  .joinsubcontainer {
+    flex-basis: 1;
+    width: 33%;
+  }
+
+  .joincontainer div{
+   height: 50vh;
+   width: 30%;
+  }
+
+  .openButton.white {
+    width: 150px;
+    margin-bottom: 0px;
+  }
+
+  .openButton {
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    margin-top: 100px;
+  }
+}
+
+/* .project, .join, .contact, .footer{
+  margin-left: -50px;
+  margin-right: -50px;
+} */
+
+/* End of Desktop Version Footer */
+
 @media screen and (max-width: 850px) {
   .formPopup {
     padding-left: 25%;
   }
+
     /* Timeline mobile*/
 
     .flex-container {
