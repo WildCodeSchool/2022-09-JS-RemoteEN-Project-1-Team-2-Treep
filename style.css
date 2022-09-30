@@ -373,7 +373,7 @@ li p {
 
   .timeline {
     display: block;
-    margin-top: 250px;
+    margin-top: 300px;
     padding: 15px;
     padding-right: 5%;
     padding-left: 5%;
@@ -621,7 +621,7 @@ h4 {
   position: fixed;
   z-index: 1;
   padding-top: 10vh;
-  padding-left: 40vw;
+  padding-left: 32vw;
   left: 0;
   top: 0;
   width: 100%;
@@ -650,43 +650,64 @@ h4 {
 }
 
 .formContainer {
-  max-width: 300px;
-  padding: 20px;
+  position: relative;
+  padding: 1rem;
+  max-width: 500px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 15px;
   position: relative;
+  border-radius: 0px 0px 0px 0px;
+  border-width: 0px 0px 0px 0px;
 }
 
 .formContainer input {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin: 5px 0 20px 0;
-  border: none;
-  background: rgb(228, 254, 224);
-  border-radius: 15px;
+  border-style: solid;
+  border-color: #000000!important;
+  border-radius: 1px 1px 1px 1px;
+  border-width: 1px 1px 1px 1px;
 }
 
 .formContainer input:focus {
   background-color: rgb(177, 254, 182);
   outline: none;
 }
+.modal-h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #000000!important;
+  font-weight: 900;
+}
 
 .formContainer .btn {
   padding: 12px 20px;
-  font-weight: bolder;
-  font-size: larger;
-  border: none;
-  background-color: #48ce00;
-  color: rgb(255, 255, 255);
   cursor: pointer;
   width: 100%;
   margin-bottom: 15px;
-  opacity: 0.8;
   border-radius: 10px;
+  color: #FEFFFF!important;
+  background-color: #000000;
+  border-radius: 0px 0px 0px 0px;
+  border-width: 0px 0px 0px 0px;
+}
+
+.formContainer .btn:hover{
+	background-color:rgba(0,0,0,0.80);
 }
 
 .formContainer .cancel {
-  background-color: #003b00;
+  background-color: #000000;
+}
+
+.formContainer .cancel:hover{
+	background-color:rgba(0,0,0,0.80);
+}
+
+#message {
+  font-size: 1.2rem;
+  padding: 10px;
 }
 
 .formContainer .btn:hover,
