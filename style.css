@@ -35,26 +35,22 @@ body {
 }
 
 .background {
-  background: url(./img/hero-background.jpg) no-repeat;
-  background-position: bottom;
-  background-size: cover;
+    background: url(./img/hero-background.jpg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 
 .maincontainer {
-  padding-right: 5%;
-  padding-left: 5%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.3) 0%,
-    rgba(255, 255, 255, 0.09) 100%
-  );
-  backdrop-filter: blur(2px);
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.09) 100%);
+    backdrop-filter: blur(2px);
 }
 
 nav.subcontainer.logo {
@@ -65,11 +61,11 @@ nav.subcontainer.logo {
 }
 
 .subcontainer.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
 }
 
 .subcontainer.socials {
@@ -86,6 +82,7 @@ h1 {
   font-weight: 900;
   letter-spacing: -0.09em;
   margin-bottom: 30px;
+
   line-height: 0.8em;
 }
 
@@ -420,11 +417,12 @@ li p {
 .openButton {
   margin-top: 10%;
   margin-bottom: 10%;
-  height: 6vh;
-  width: 18vw;
-  color: white;
-  border: none;
-  background-color: #000000;
+    height: 6vh;
+    width: 40vw;
+    color: white;
+    border: none;
+    background-color: #000000;
+
 }
 
 .mainPopup {
