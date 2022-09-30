@@ -32,12 +32,12 @@ body {
     padding-top: 4%;
     width: 20vw;
     height: auto;
+    
 }
 .background {
     background: url(./img/hero-background.jpg) no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 100vh;
+    background-position: bottom;
+    background-size: cover;
 }
 
 .maincontainer {
@@ -47,9 +47,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    overflow-x: hidden;
+    overflow-y: hidden;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.09) 100%);
     backdrop-filter: blur(2px);
-    overflow-x: hidden;
 
 }
 
@@ -61,10 +62,11 @@ nav.subcontainer.logo {
 }
 
 .subcontainer.hero {
-    padding-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+    height: 100%;
 }
 
 .subcontainer.socials {
@@ -77,10 +79,11 @@ li{
 
 h1 {
   font-size: 5em;
-  line-height: 1.3em;
   font-family: "Montserrat";
   font-weight: 900;
   letter-spacing: -0.09em;
+  margin-bottom :0;
+  line-height: 0.8em;
 }
 
 p{
@@ -90,7 +93,6 @@ p{
 }
 
 .hamburger {
-  position: fixed;
   z-index: 1;
   top: 1rem;
   right: 1rem;
@@ -299,7 +301,8 @@ li p {
 }
 
 .openButton {
-    margin-top: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
     height: 6vh;
     width: 40vw;
     color: white;
