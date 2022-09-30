@@ -452,7 +452,7 @@ h4 {
     color: white;
     border: none;
     background-color: #000000;
-
+    cursor: pointer;
 }
 
 .mainPopup {
