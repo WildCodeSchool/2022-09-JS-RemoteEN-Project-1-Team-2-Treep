@@ -33,9 +33,32 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.sticky-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  z-index: 1000;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.sticky-nav.sticky{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 1000;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+  transition: all .2s ease-out;
+  background-color: #fff;
+}
+
 .logo {
-  padding-top: 10px;
-  width: 18vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 10vw;
   height: auto;
 }
 
@@ -150,12 +173,43 @@ p {
 .menuItem {
   text-decoration: none;
   color: #000000;
-  font-size: 5em;
+  font-size: 1em;
   line-height: 1.3em;
   font-family: "Montserrat";
-  font-weight: 900;
+  font-weight: 400;
   letter-spacing: -0.09em;
 }
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.desktop-menu {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.desktop-nav ul li {
+  padding: 5px;
+  margin-left: 100px;
+
+};
+
+.sticky-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+  transition: all .2s ease-out;
+}
+
 /*About*/
 .about{
   padding-right: 5%;
@@ -249,10 +303,73 @@ li p {
 }
 
 @media screen and (min-width: 1000px) {
+  .sticky-nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    z-index: 1000;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .sticky-nav.sticky{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 1000;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    transition: all .2s ease-out;
+    background-color: #fff;
+  }
+  .mobile-menu{
+    display: none;
+  }
+
   section {
     padding-right: 5%;
     padding-left: 5%;
   }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-menu {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.desktop-nav ul li {
+    padding: 5px;
+    margin-left: 100px;
+
+};
+
+  .menuItem {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1em;
+    line-height: 1.3em;
+    font-family: "Montserrat";
+    font-weight: 400;
+    letter-spacing: -0.09em;
+}
+
+.hero p {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 150px;
+}
+
 
   .timeline {
     display: block;
@@ -283,7 +400,8 @@ li p {
   li p {
     transform: translateY(-10px);
     opacity: 0;
-    padding: 0 100px;
+    /*padding: 0 100px;*/
+    margin: 10px;
     transition: 1.5s;
   }
 
@@ -626,8 +744,19 @@ h4 {
 
 @media screen and (max-width: 850px) {
   .formPopup {
-    padding-left: 25%;
+    padding-left: 25%;  
   }
+
+  .desktop-menu{
+    display: none;
+  }  
+
+  .closeIcon.material-symbols-outlined {
+    display: flex;
+    position: absolute;
+    font-size: 4em;
+    z-index: 9;
+}
 
     /* Timeline mobile*/
 
@@ -683,6 +812,16 @@ h4 {
       display: contents;
       font-size: 1rem;
     }
+
+    .menuItem {
+      text-decoration: none;
+      color: #000000;
+      font-size: 5em;
+      line-height: 1.3em;
+      font-family: "Montserrat";
+      font-weight: 900;
+      letter-spacing: -0.09em;
+    }    
 }
 
 @media screen and (max-width: 500px) {
