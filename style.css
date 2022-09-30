@@ -710,6 +710,11 @@ h4 {
   opacity: 1;
 }
 
+.join {
+  background-color: #f3f3f3;
+}
+
+
 
 @media screen and (max-width: 850px) {
   .formPopup {
