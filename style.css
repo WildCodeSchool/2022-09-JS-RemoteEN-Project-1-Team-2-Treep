@@ -727,7 +727,7 @@ h4 {
 
 /* Desktop Version Footer */
 @media screen and (min-width: 1000px){
-  .subcontainersocials {
+  .subcontainersocials l{
     display: none;
   }
 
