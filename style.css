@@ -583,6 +583,8 @@ h4 {
 
   .openButton {
     width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   h4 {
