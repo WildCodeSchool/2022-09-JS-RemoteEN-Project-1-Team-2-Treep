@@ -6,9 +6,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /*CSS for the hero mobile version TEST FOR REBASE*/
@@ -16,7 +21,7 @@ body {
   font-family: "Material Symbols Outlined";
   font-weight: normal;
   font-style: normal;
-  font-size: 4em;
+  font-size: 10vw;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -30,7 +35,7 @@ body {
 
 .logo {
   padding-top: 10px;
-  width: 10vw;
+  width: 18vw;
   height: auto;
 }
 
@@ -151,8 +156,17 @@ p {
   font-weight: 900;
   letter-spacing: -0.09em;
 }
+/*About*/
+.about{
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-bottom: 15%;
+  margin-top: 15%;
+}
 
 /* Timeline CSS */
+
+
 .list-items:nth-child(2n) {
   margin-top: 0px;
   display: flex;
@@ -175,8 +189,6 @@ p {
 }
 
 .flex-container {
-  margin-left: 5%;
-  margin-right: 5%;
   padding: 0;
 }
 
@@ -198,37 +210,37 @@ p {
 
 .timeline {
   padding: 0;
+  margin-top: 20%;
 }
 
 .date {
-  width: 50%;
   text-align: center;
   font-weight: bold;
   top: 0;
   left: 0;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   transform: translateX(0px) rotateZ(0deg);
 }
 
 .date1 {
-  width: 50%;
   text-align: center;
   font-weight: bold;
   top: 0;
   left: 0;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   transform: translateX(0px) rotateZ(0deg);
 }
 
 .h-text {
   display: contents;
   font-size: 1rem;
+  font-weight: 500;
 }
 
 li p {
   transform: translateY(-10px);
   opacity: 100;
-  padding: 0 100px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1000px) {
@@ -259,7 +271,7 @@ li p {
   .list-items {
     margin-top: 0px;
     position: relative;
-    width: 100%;
+    width: 50%;
     padding: 0px;
   }
 
@@ -355,12 +367,15 @@ li p {
 .projcontainer {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   background-color: #f3f3f3;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .project {
   background-color: #f3f3f3;
+
+padding-top: 10%;
 }
 
 .joincontainer {
@@ -368,7 +383,7 @@ li p {
   flex-direction: column;
 
   align-items: center;
-  padding-top: 75px;
+  padding-top: 15%;
 }
 
 .join {
@@ -385,6 +400,9 @@ li p {
 
 .contact {
   text-align: center;
+  margin-top: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .openButton.white {
@@ -555,64 +573,60 @@ h4 {
   .formPopup {
     padding-left: 25%;
   }
+    /* Timeline mobile*/
 
-  /* Timeline mobile*/
-
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+    .flex-container {
+      display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+      }
+  
+  
+    .h-text {
+      display:contents;
+    }
+    
+    .timeline {
+      padding: 0;
   }
-
-  .h-text {
-    display: contents;
-  }
-
-  .timeline {
-    padding: 0;
-  }
-
-  .timeline-line {
-    display: none;
-  }
-
-  .timeline-point {
-    display: none;
-  }
-  .date {
-    top: 0;
-    left: 0;
-    font-size: 4rem;
-    transform: translateX(0px) rotateZ(0deg);
-  }
-
-  .date1 {
-    top: 0;
-    left: 0;
-    font-size: 4rem;
-    transform: translateX(0px) rotateZ(0deg);
-  }
-
-  .timeline-line {
-    display: none;
-  }
-
-  .timeline-point {
-    display: none;
-  }
-
-  .h-text {
-    display: contents;
-    font-size: 1rem;
-  }
-
-  .side p:nth-child(1) {
-    font-size: 1rem;
-    font-weight: 600;
-  }
+  
+    .timeline-line {
+      display:none;
+    }
+    
+    .timeline-point {
+      display: none;
+  
+    }
+    .date {
+      top: 0;
+      left: 0;    
+      font-size: 4rem;
+      transform: translateX(0px) rotateZ(0deg);
+    }
+  
+    .date1 {
+      top: 0;
+      left: 0;
+      font-size: 4rem;
+      transform: translateX(0px) rotateZ(0deg);
+    }
+  
+    .timeline-line {
+      display: none;
+    }
+  
+    .timeline-point {
+      display: none;
+    }
+  
+    .h-text {
+      display: contents;
+      font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
