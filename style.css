@@ -64,7 +64,7 @@ body {
 
 .background {
     background: url(./img/hero-background.jpg) no-repeat;
-    background-position: bottom;
+    background-position: left;
     background-size: cover;
 }
 
