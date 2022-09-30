@@ -433,6 +433,15 @@ h4 {
   font-weight: normal;
 }
 
+.imgstep {
+  background-image: url(img/step1-img.png);
+  width: 100px;
+  height: 80px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+
 /* CSS FOR THE POP-UP FORM BELOW (INVISIBLE UNTIL BUTTON CLICKED)*/
 
 .topcont {
@@ -589,6 +598,14 @@ h4 {
 
   h4 {
     margin-top: 100px;
+  }
+
+  .imgstep {
+    background-image: url(img/step1-img.png);
+    width: 180px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
 }
 
