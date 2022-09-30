@@ -6,9 +6,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /*CSS for the hero mobile version TEST FOR REBASE*/
@@ -16,7 +21,7 @@ body {
   font-family: "Material Symbols Outlined";
   font-weight: normal;
   font-style: normal;
-  font-size: 4em;
+  font-size: 10vw;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -28,15 +33,38 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.sticky-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  z-index: 1000;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.sticky-nav.sticky{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 1000;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+  transition: all .2s ease-out;
+  background-color: #fff;
+}
+
 .logo {
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 10vw;
   height: auto;
 }
 
 .background {
     background: url(./img/hero-background.jpg) no-repeat;
-    background-position: bottom;
+    background-position: left;
     background-size: cover;
 }
 
@@ -142,7 +170,7 @@ p {
   z-index: 0;
 }
 
-.menuItem {
+/*.menuItem {
   text-decoration: none;
   color: #000000;
   font-size: 5em;
@@ -150,6 +178,53 @@ p {
   font-family: "Montserrat";
   font-weight: 900;
   letter-spacing: -0.09em;
+}*/
+
+.menuItem {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-family: "Montserrat";
+  font-weight: 400;
+  letter-spacing: -0.09em;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.desktop-menu {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.desktop-nav ul li {
+  padding: 5px;
+  margin-left: 100px;
+
+};
+
+.sticky-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+  transition: all .2s ease-out;
+}
+/*About*/
+.about{
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-bottom: 15%;
+  margin-top: 15%;
 }
 
 /* Timeline CSS */
@@ -223,19 +298,86 @@ p {
 .h-text {
   display: contents;
   font-size: 1rem;
+  font-weight: 500!important;
 }
-
+/*i removed padding: 0 100px;*/
 li p {
   transform: translateY(-10px);
   opacity: 100;
-  padding: 0 100px;
+  
+}
+
+.side p{
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1000px) {
+  .sticky-nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    z-index: 1000;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .sticky-nav.sticky{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 1000;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    transition: all .2s ease-out;
+    background-color: #fff;
+  }
+  .mobile-menu{
+    display: none;
+  }
+
   section {
     padding-right: 5%;
     padding-left: 5%;
   }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-menu {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.desktop-nav ul li {
+    padding: 5px;
+    margin-left: 100px;
+
+};
+
+  .menuItem {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1em;
+    line-height: 1.3em;
+    font-family: "Montserrat";
+    font-weight: 400;
+    letter-spacing: -0.09em;
+}
+
+.hero p {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 150px;
+}
 
   .timeline {
     display: block;
@@ -355,23 +497,22 @@ li p {
 .projcontainer {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   background-color: #f3f3f3;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .project {
   background-color: #f3f3f3;
+
+padding-top: 10%;
 }
 
 .joincontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 75px;
-}
-
-.join {
-  background-color: #f3f3f3;
+  padding-top: 15%;
 }
 
 .joinsubcontainer {
@@ -380,6 +521,7 @@ li p {
   margin-top: 5px;
   height: 180px;
   text-align: center;
+
   font-weight: bolder;
 }
 
@@ -390,6 +532,9 @@ li p {
 
 .contact {
   text-align: center;
+  margin-top: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .openButton.white {
@@ -566,8 +711,16 @@ h4 {
 }
 
 
-/* Desktop Version Footer */
+@media screen and (max-width: 850px) {
+  .formPopup {
+    padding-left: 25%;
+  }
+  .desktop-menu{
+    display: none;
+  }
+  /* Timeline mobile*/
 
+/* Desktop Version Footer */
 @media screen and (min-width: 1000px){
   .subcontainersocials {
     display: none;
@@ -625,65 +778,61 @@ h4 {
   .formPopup {
     padding-left: 25%;
   }
+
+    /* Timeline mobile*/
+
+    .flex-container {
+      display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+      }
   
-
-/* Timeline mobile*/
-
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+  
+    .h-text {
+      display:contents;
+    }
+    
+    .timeline {
+      padding: 0;
   }
-
-  .h-text {
-    display: contents;
-  }
-
-  .timeline {
-    padding: 0;
-  }
-
-  .timeline-line {
-    display: none;
-  }
-
-  .timeline-point {
-    display: none;
-  }
-  .date {
-    top: 0;
-    left: 0;
-    font-size: 4rem;
-    transform: translateX(0px) rotateZ(0deg);
-  }
-
-  .date1 {
-    top: 0;
-    left: 0;
-    font-size: 4rem;
-    transform: translateX(0px) rotateZ(0deg);
-  }
-
-  .timeline-line {
-    display: none;
-  }
-
-  .timeline-point {
-    display: none;
-  }
-
-  .h-text {
-    display: contents;
-    font-size: 1rem;
-  }
-
-  .side p:nth-child(1) {
-    font-size: 1rem;
-    font-weight: 600;
-  }
+  
+    .timeline-line {
+      display:none;
+    }
+    
+    .timeline-point {
+      display: none;
+  
+    }
+    .date {
+      top: 0;
+      left: 0;    
+      font-size: 3.2rem;
+      transform: translateX(0px) rotateZ(0deg);
+    }
+  
+    .date1 {
+      top: 0;
+      left: 0;
+      font-size: 3.2rem;
+      transform: translateX(0px) rotateZ(0deg);
+    }
+  
+    .timeline-line {
+      display: none;
+    }
+  
+    .timeline-point {
+      display: none;
+    }
+  
+    .h-text {
+      display: contents;
+      font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
