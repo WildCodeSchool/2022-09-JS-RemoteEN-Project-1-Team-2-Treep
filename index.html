@@ -14,45 +14,58 @@
 </head>
 
 <body>
+  <div class="sticky-nav">
+    <nav class="desktop-nav logo">
+      <img class="logo" src ="./img/Treep_logo.png" alt="Treep logo"/>
+           
+      <ul class="desktop-menu">
+              <li><a class="menuItem" href="#about">About</a></li>
+              <li><a class="menuItem" href="#project">Project</a></li>
+              <li><a class="menuItem" href="#join">Join us</a></li>
+          </ul>
+          <div class="subcontainer mobile-menu logo">
+            <button class="hamburger">
+                <i class="menuIcon material-symbols-outlined">
+                  menu</i>
+                  <i class="closeIcon material-symbols-outlined">
+                      close
+                      </i>
+              </button>
+                 
+              <ul class="menu">
+                    <li><a class="menuItem" href="#">About</a></li>
+                    <li><a class="menuItem" href="#">Project</a></li>
+                    <li><a class="menuItem" href="#">Join us</a></li>
+              </ul>
+                
+        </div>    
+    </nav>          
 
-    <header>
-        <div class="background"> 
+      
+  </div>
+
+  <header>
+    <div class="background"> 
  
-        <div class="maincontainer">
-            <nav class="subcontainer logo">
-                <img class="logo" src ="./img/Treep_logo.png" alt="Treep logo"/>
-                <button class="hamburger">
-                    <i class="menuIcon material-symbols-outlined">
-                      menu</i>
-                      <i class="closeIcon material-symbols-outlined">
-                          close
-                          </i>
-                  </button>
-                     
-                <ul class="menu">
-                        <li><a class="menuItem" href="#">About</a></li>
-                        <li><a class="menuItem" href="#">Project</a></li>
-                        <li><a class="menuItem" href="#">Join us</a></li>
-                    </ul>
-                    
-            </nav>
-            <div class="subcontainer hero">
-                    <h1>Plant a tree today</h1>
-                    <p>TThe climate crisis has been proven to be the main cause of wildfires leading to the loss of 9.3 millions hectares of tree cover globally. If we don’t do anything, wildfires will increase by 30% in 2050. At Treep, we made is our lifelong goal to replant all the trees that burnt down, one by one, to fight the disastrous effects of climate change.</p>
-                    <button class="openButton" onclick="openForm()">Donate trees</button>
-            </div>  
-        </div>     
-            <div class="subcontainer socials">
-                <ul>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                </ul>
-            </div>
+    <div class="maincontainer">
+      
+        <div class="subcontainer hero">
+                <h1>Plant a tree today</h1>
+                <p>TThe climate crisis has been proven to be the main cause of wildfires leading to the loss of 9.3 millions hectares of tree cover globally. If we don’t do anything, wildfires will increase by 30% in 2050. At Treep, we made is our lifelong goal to replant all the trees that burnt down, one by one, to fight the disastrous effects of climate change.</p>
+                <button class="openButton" onclick="openForm()">Donate trees</button>
+        </div>  
+    </div>     
+        <div class="subcontainer socials">
+            <ul>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+            </ul>
         </div>
-    </header>
+    </div>
+</header>
 
-  <section class="about">
+  <section id="about" class="about">
 
     <section>
       <h2>The climate change is already here. If we act now, we can limit warming and reduce the dangers associated with it. Every tiny bit matters.</h2>
@@ -68,7 +81,7 @@
             <span class="timeline-point"></span>
             <span class="date">665</span>
             <div class="side">
-              <p>species extinct since 2000 </p>
+              <p>Species extinct since 2000 </p>
             <p class="h-text">orem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </li>
@@ -76,7 +89,7 @@
             <span class="timeline-point"></span>
             <span class="date">1000</span>
           <div class="side">
-            <p>Title</p>
+            <p>Species extinct since 2000 </p>
             <p class="h-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>  
           </div>
           </li>
@@ -84,7 +97,7 @@
             <span class="timeline-point tm-pointxl"></span>
             <span class="date date1">2022</span>
             <div class="side">
-              <p>Title</p>
+              <p>Species extinct since 2000 </p>
               <p class="h-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
           </li>
@@ -92,7 +105,7 @@
             <span class="timeline-point"></span>
             <span class="date">1000</span>
             <div class="side">
-              <p>Title</p>
+              <p>Species extinct since 2000 </p>
               <p class="h-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
           </li>
@@ -100,7 +113,7 @@
             <span class="timeline-point"></span>
             <span class="date">1000</span>
             <div class="side">
-              <p>Title</p>
+              <p>Species extinct since 2000 </p>
               <p class="h-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
           </li>
@@ -110,7 +123,7 @@
     </section>
       </section>
 
-  <section class="project">
+  <section id="project" class="project">
     <div class="projcontainer">
       <h2>Join us to be a part of the forest!</h2>
       <p>We use your donations to create forests. Our goal is to sustainably plant trees to create an ecosystem in which a whole variety of fauna and flora can flourish. After our volunteers plant the tree, we simply protect it from all human intervention because we believe that nature knows best.
@@ -121,7 +134,7 @@
 
   </section>
 
-  <section class="join">
+  <section id="join" class="join">
     <div class="joincontainer">
       <div class="joinsubcontainer">
         <h3>Step 1</h3>
