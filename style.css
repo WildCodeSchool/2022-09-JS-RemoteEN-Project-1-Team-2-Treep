@@ -28,15 +28,38 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.sticky-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  z-index: 1000;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.sticky-nav.sticky{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 1000;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+  transition: all .2s ease-out;
+  background-color: #fff;
+}
+
 .logo {
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 10vw;
   height: auto;
 }
 
 .background {
     background: url(./img/hero-background.jpg) no-repeat;
-    background-position: bottom;
+    background-position: left;
     background-size: cover;
 }
 
@@ -142,7 +165,7 @@ p {
   z-index: 0;
 }
 
-.menuItem {
+/*.menuItem {
   text-decoration: none;
   color: #000000;
   font-size: 5em;
@@ -150,6 +173,46 @@ p {
   font-family: "Montserrat";
   font-weight: 900;
   letter-spacing: -0.09em;
+}*/
+
+.menuItem {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-family: "Montserrat";
+  font-weight: 400;
+  letter-spacing: -0.09em;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.desktop-menu {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.desktop-nav ul li {
+  padding: 5px;
+  margin-left: 100px;
+
+};
+
+.sticky-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+  transition: all .2s ease-out;
 }
 
 /* Timeline CSS */
@@ -232,10 +295,72 @@ li p {
 }
 
 @media screen and (min-width: 1000px) {
+  .sticky-nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    z-index: 1000;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .sticky-nav.sticky{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 1000;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    transition: all .2s ease-out;
+    background-color: #fff;
+  }
+  .mobile-menu{
+    display: none;
+  }
+
   section {
     padding-right: 5%;
     padding-left: 5%;
   }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-menu {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.desktop-nav ul li {
+    padding: 5px;
+    margin-left: 100px;
+
+};
+
+  .menuItem {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1em;
+    line-height: 1.3em;
+    font-family: "Montserrat";
+    font-weight: 400;
+    letter-spacing: -0.09em;
+}
+
+.hero p {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 150px;
+}
 
   .timeline {
     display: block;
@@ -555,7 +680,9 @@ h4 {
   .formPopup {
     padding-left: 25%;
   }
-
+  .desktop-menu{
+    display: none;
+  }
   /* Timeline mobile*/
 
   .flex-container {

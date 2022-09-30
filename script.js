@@ -117,3 +117,20 @@ if (window.matchMedia("(min-width: 728px)").matches) {
   });
 }
 
+//scrolling to target
+
+document.querySelectorAll('a[href^="#"]').forEach(anchorlink => {
+  anchorlink.addEventListener('click', function (event) {
+      event.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+// stycky navbar
+
+window.addEventListener("scroll", function(){
+  var desktopnav = this.document.querySelector(".sticky-nav");
+  desktopnav.classList.toggle("sticky", window.scrollY > 0);
+})
