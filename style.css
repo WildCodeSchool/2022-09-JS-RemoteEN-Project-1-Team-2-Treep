@@ -165,8 +165,6 @@ p {
 }
 
 /* Timeline CSS */
-
-
 .list-items:nth-child(2n) {
   margin-top: 0px;
   display: flex;
@@ -189,6 +187,8 @@ p {
 }
 
 .flex-container {
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 0;
 }
 
@@ -210,36 +210,41 @@ p {
 
 .timeline {
   padding: 0;
-  margin-top: 20%;
 }
 
 .date {
+  width: 50%;
   text-align: center;
   font-weight: bold;
   top: 0;
   left: 0;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   transform: translateX(0px) rotateZ(0deg);
 }
 
 .date1 {
+  width: 50%;
   text-align: center;
   font-weight: bold;
   top: 0;
   left: 0;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   transform: translateX(0px) rotateZ(0deg);
 }
 
 .h-text {
   display: contents;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 500!important;
 }
-
+/*i removed padding: 0 100px;*/
 li p {
   transform: translateY(-10px);
   opacity: 100;
+  
+}
+
+.side p{
   font-weight: bold;
 }
 
@@ -271,7 +276,7 @@ li p {
   .list-items {
     margin-top: 0px;
     position: relative;
-    width: 50%;
+    width: 100%;
     padding: 0px;
   }
 
@@ -396,6 +401,8 @@ padding-top: 10%;
   margin-top: 5px;
   height: 150px;
   text-align: center;
+  padding-left: 5%;
+    padding-right: 5%;
 }
 
 .contact {
@@ -604,14 +611,14 @@ h4 {
     .date {
       top: 0;
       left: 0;    
-      font-size: 4rem;
+      font-size: 3.2rem;
       transform: translateX(0px) rotateZ(0deg);
     }
   
     .date1 {
       top: 0;
       left: 0;
-      font-size: 4rem;
+      font-size: 3.2rem;
       transform: translateX(0px) rotateZ(0deg);
     }
   
