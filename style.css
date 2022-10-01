@@ -66,9 +66,22 @@ body {
     background: url(./img/hero-background.jpg) no-repeat;
     background-position: left;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
+.maincontainer {
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.09) 100%);
+    /*backdrop-filter: blur(2px);*/
+}
 
 nav.subcontainer.logo {
   display: flex;
@@ -76,15 +89,6 @@ nav.subcontainer.logo {
   justify-content: space-between;
   width: 100%;
 }
-.maincontainer {
-  padding-right: 7%;
-  padding-left: 7%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
 
 .subcontainer.hero {
     display: flex;
