@@ -63,9 +63,10 @@ body {
 }
 
 .background {
-    background: url(./img/hero-background.jpg) no-repeat;
+    background: url(./img/herobgCUT.jpg) no-repeat;
     background-position: left;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -92,7 +93,7 @@ nav.subcontainer.logo {
     align-items: flex-start;
     justify-content: center;
     height: 100%;
-    background: rgba( 255, 255, 255, 0 );
+    background: rgba( 255, 255, 255, 0.55 );
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
 }
@@ -343,10 +344,15 @@ li p {
 
 .desktop-menu {
     list-style: none;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    font-family: "Montserrat";
+    font-weight: 900;
 }
 
 .desktop-nav ul li {
@@ -356,13 +362,6 @@ li p {
 };
 
   .menuItem {
-    text-decoration: none;
-    color: #000000;
-    font-size: 1em;
-    line-height: 1.3em;
-    font-family: "Montserrat";
-    font-weight: 400;
-    letter-spacing: -0.09em;
 }
 
 .hero p {
