@@ -578,6 +578,19 @@ h4 {
   font-weight: normal;
 }
 
+.imgstep {
+  margin-top: 10px;
+  height: 75px;
+  width: 100px;
+}
+.joincontainer {
+  font-weight: bold;
+}
+.joincontainer p {
+  margin-top: 5px;
+}
+
+
 /* CSS FOR THE POP-UP FORM BELOW (INVISIBLE UNTIL BUTTON CLICKED)*/
 
 .topcont {
