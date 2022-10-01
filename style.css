@@ -69,6 +69,7 @@ body {
     background-attachment: fixed;
 }
 
+
 .maincontainer {
     padding-right: 5%;
     padding-left: 5%;
@@ -95,6 +96,9 @@ nav.subcontainer.logo {
     align-items: flex-start;
     justify-content: center;
     height: 100%;
+    background: rgba( 255, 255, 255, 0 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
 }
 
 .subcontainer.socials {
@@ -136,7 +140,7 @@ p {
 
 .closeIcon.material-symbols-outlined {
   display: none;
-  font-size: 4em;
+  font-size: 10vw;
   z-index: 4;
 }
 
@@ -184,6 +188,7 @@ p {
 .desktop-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -197,7 +202,7 @@ p {
 
 .desktop-nav ul li {
   padding: 5px;
-  margin-left: 100px;
+  margin-left: 0;
 
 };
 
@@ -350,7 +355,7 @@ li p {
 
 .desktop-nav ul li {
     padding: 5px;
-    margin-left: 100px;
+    margin-left: 0;
 
 };
 
@@ -653,7 +658,8 @@ h4 {
 .formContainer {
   position: relative;
   padding: 1rem;
-  max-width: 500px;
+  max-width: 300px;
+  margin-top: 75px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 15px;
   position: relative;
@@ -720,6 +726,20 @@ h4 {
 /* Desktop Version Footer */
 
 @media screen and (min-width: 1000px){
+
+
+.closeIcon.material-symbols-outlined {
+    display: flex;
+    position: absolute;
+    font-size: 10vw;
+    z-index: 9;
+  }
+
+  .formContainer {
+    max-width: 500px;
+    margin-top: 10px;
+  }
+
   .subcontainersocials {
     display: none;
   }
@@ -776,9 +796,9 @@ h4 {
   .closeIcon.material-symbols-outlined {
     display: flex;
     position: absolute;
-    font-size: 4em;
+    font-size: 10vw;
     z-index: 9;
-}
+  }
 
     /* Timeline mobile*/
 
@@ -863,5 +883,7 @@ h4 {
     padding-left: 40vw;
   }
 }
+
+
 
 /* End of CSS For Pop-Up Window */
