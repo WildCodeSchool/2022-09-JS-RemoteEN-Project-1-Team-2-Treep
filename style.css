@@ -519,10 +519,10 @@ padding-top: 10%;
   background-color: #ffffff;
   width: 80%;
   margin-top: 5px;
-  height: 150px;
+  height: 200px;
   text-align: center;
   padding-left: 5%;
-    padding-right: 5%;
+  padding-right: 5%;
 }
 
 .contact {
@@ -587,7 +587,7 @@ h4 {
   font-weight: bold;
 }
 .joincontainer p {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 
@@ -763,6 +763,14 @@ h4 {
   .joinsubcontainer {
     flex-basis: 1;
     width: 33%;
+  }
+
+  .imgstep {
+    margin-top: 50px;
+  }
+
+  .joinsubcontainer p {
+    margin-top: 60px;
   }
 
   .joincontainer div{
