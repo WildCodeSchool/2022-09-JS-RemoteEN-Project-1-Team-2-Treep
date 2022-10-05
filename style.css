@@ -677,9 +677,9 @@ h4 {
 }
 
 .formContainer input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
-  margin: 5px 0 20px 0;
+  margin: 0px 0 10px 0;
   border-style: solid;
   border-color: #000000!important;
   border-radius: 1px 1px 1px 1px;
@@ -687,7 +687,7 @@ h4 {
 }
 
 .formContainer input:focus {
-  background-color: rgb(177, 254, 182);
+  background-color: #F4F4F4;
   outline: none;
 }
 .modal-h2 {
@@ -700,7 +700,8 @@ h4 {
 .formContainer .btn {
   padding: 12px 20px;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
+  margin-top: 20px;
   margin-bottom: 15px;
   border-radius: 10px;
   color: #FEFFFF!important;
@@ -771,7 +772,7 @@ h4 {
   }
 
   .joinsubcontainer p {
-    margin-top: 60px;
+    margin-top: 75px;
   }
 
   .joincontainer div{
@@ -793,6 +794,9 @@ h4 {
   h4 {
     margin-top: 100px;
   }
+
+  .formContainer input {
+    width: 60%;
 }
 
 /* .project, .join, .contact, .footer{
