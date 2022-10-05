@@ -145,6 +145,12 @@ p {
   align-content: center;
 }
 
+.p1 {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
 .showMenu {
   transform: translateX(0);
   transition: transform 1s;
@@ -283,6 +289,27 @@ li p {
 /*CSS desktop version with a media query at min 1000px*/
 
 @media screen and (min-width: 1000px) {
+
+.projectbloc {
+    display: flex;
+    justify-content: center;
+    padding-left: 2em;
+    padding-bottom: 5em;
+    gap: 1em;
+    align-items: center;
+  }
+.p1 {
+    float: left;
+    width: 50%;
+    height: auto;
+    text-align: left;
+  }
+.p2 {
+    float: right;
+    width: 50%;
+    height: auto;
+  }
+
 .menu{
   display: contents;
 }
