@@ -96,7 +96,6 @@ h1 {
   font-weight: 20vw;
   letter-spacing: -0.09em;
   margin-bottom: 30px;
-
   line-height: 0.8em;
 }
 
@@ -187,17 +186,6 @@ p {
   background-color: #ffff;
 }
 
-.subcontainer.socials {
-  display: flex;
-  justify-content: flex-end;
-  transform: translateX(622px) translateY(250px) rotateZ(270deg);
-}
-
-.socials ul li {
-  display: inline;
-  margin-left: 5rem;
-}
-
 
 /*timeline mobile version*/
 /*About*/
@@ -205,10 +193,9 @@ p {
   padding-right: 5%;
   padding-left: 5%;
   margin-bottom: 15%;
-  margin-top: 15%;
 }
-p .align-right{
-  margin-bottom: 10%;
+p.align-right{
+  margin-bottom: 15%;
 }
 /* Timeline CSS */
 .list-items:nth-child(2n) {
@@ -346,7 +333,7 @@ section {
     padding-left: 5%;
   }
 
-  .subcontainer.hero {
+.subcontainer.hero {
     padding-top: 8%;
   }
 .hero p {
@@ -363,12 +350,15 @@ section {
   height:auto;
 }
 
+.about{
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-bottom: 0%;
+}
+
   .timeline {
     display: block;
     margin-top: 300px;
-    /*padding: 15px;*/
-    /*padding-right: 5%;*/
-   /* padding-left: 5%;5%;*/
     grid-template-columns: 40% auto;
     justify-content: center;
   }
@@ -400,7 +390,9 @@ section {
   .h-text {
     display: none;
   }
-
+  .socialsandhero{
+    display:
+  }
   .align-right{
 text-align: right;
 padding-left: 35%;
@@ -416,17 +408,6 @@ padding-right: 5%;
     opacity: 0;
     transition: 1.5s;
     font-size: 3rem;
-    font-weight: 900;
-    transform: translateX(0px) rotateZ(-90deg);
-  }
-
-  .date1 {
-    position: absolute;
-    top: -195px;
-    left: 12%;
-    /* opacity: 0; */
-    transition: 1.5s;
-    font-size: 5rem;
     font-weight: 900;
     transform: translateX(0px) rotateZ(-90deg);
   }
@@ -477,8 +458,6 @@ padding-right: 5%;
   .about{
     padding-right: 0%;
     padding-left: 0%;
-    margin-bottom: 15%;
-    margin-top: 15%;
   }
   .side {
     width: 100%;
@@ -554,7 +533,7 @@ padding-top: 10%;
   padding-left: 5%;
 }
 
-.openButton.white {
+#white {
   background-color: #ffffff;
   color: #000;
   border: 1px solid black;
@@ -644,7 +623,7 @@ h4 {
 .close {
   font-size: 40px;
   color: #000000;
-  font-weight: 600;
+  font-weight: 300;
   display: inline-block;
   transform: rotate(45deg);
   cursor: pointer;
@@ -772,9 +751,6 @@ h4 {
     margin-top: 10px;
   }
 
-  .subcontainersocials {
-    display: none;
-  }
 
   .joincontainer {
     flex-direction: row;
@@ -808,9 +784,8 @@ h4 {
    width: 30%;
   }
 
-  .openButton.white {
-    width: 150px;
-    margin-bottom: 0px;
+ #white:hover{
+    background-color:none;
   }
 
   .openButton {
@@ -818,11 +793,17 @@ h4 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .openButton:hover{
+    background-color:rgba(0,0,0,0.80);
+  }
 
   h4 {
     margin-top: 100px;
   }
 
+  .subcontainersocials {
+  margin-top: 10%;
+  }
   .formContainer input {
     width: 60%;
 }
