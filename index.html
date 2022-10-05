@@ -17,40 +17,28 @@
 </head>
 
 <body>
-  <div class="sticky-nav">
-    <nav class="desktop-nav logo">
-      <img class="logo" src="./img/Treep_logo.png" alt="Treep logo" />
-
-      <ul class="desktop-menu">
-        <li><a class="menuItem" href="#about">About</a></li>
-        <li><a class="menuItem" href="#project">Project</a></li>
-        <li><a class="menuItem" href="#join">Join us</a></li>
-      </ul>
-      <div class="subcontainer mobile-menu logo">
-        <button class="hamburger">
-          <i class="menuIcon material-symbols-outlined">
-            menu</i>
-          <i class="closeIcon material-symbols-outlined">
-            close
-          </i>
-        </button>
-
-        <ul class="menu">
-          <li><a class="menuItem" href="#">About</a></li>
-          <li><a class="menuItem" href="#">Project</a></li>
-          <li><a class="menuItem" href="#">Join us</a></li>
-        </ul>
-
-      </div>
-    </nav>
-
-
-  </div>
-
   <header>
-    <div class="background">
-
-      <div class="maincontainer">
+    <div class="maincontainer">
+      <div class ="">
+      <nav class="subcontainer logo">
+      <img class="logo" src ="./img/Treep_logo.png" alt="Treep logo"/>
+                 
+              <ul class="menu">
+                    <li><a class="menuItem" href="#about">About</a></li>
+                    <li><a class="menuItem" href="#project">Our project</a></li>
+                    <li><a class="menuItem" href="#joinus">Join us</a></li>
+              </ul>
+                
+      <button class="hamburger">
+                <i class="menuIcon material-symbols-outlined">
+                  menu</i>
+                  <i class="closeIcon material-symbols-outlined">
+                      close
+                      </i>
+        </button>
+    </nav>          
+    <div class="background"> 
+ 
 
         <div class="subcontainer hero">
           <h1>Plant a tree today</h1>
@@ -71,15 +59,12 @@
     </div>
   </header>
 
-  <section id="about" class="about">
 
-    <section>
-      <h2>The climate change is already here. If we act now, we can limit warming and reduce the dangers associated with
-        it. Every tiny bit matters.</h2>
-      <p>What we do by 2030 will determine whether we can reduce global warming enough to avoid the worst effects of
-        climate change. We must reduce the emissions drastically and remove some of the carbon from the atmosphere.
-        Luckily, the plants naturally absorb and store carbon. By protecting natural habitats and carefully managing
-        farmland and forests, we can store billions of tons of this " green carbon ".</p>
+  <section  class="about">
+<div class = "anchor" id="about"></div>
+      <h2 class = 'align-right'>The climate change is already here</h2>
+      <p class = 'align-right'>If we act now, we can limit warming and reduce the dangers associated with it. Every tiny bit matters. What we do by 2030 will determine whether we can reduce global warming enough to avoid the worst effects of climate change. We must reduce the emissions drastically and remove some of the carbon from the atmosphere. Luckily, the plants naturally absorb and store carbon. By protecting natural habitats and carefully managing farmland and forests, we can store billions of tons of this "green carbon".</p>
+
 
       <section class="timeline">
         <div class="timeline-line">
@@ -91,40 +76,44 @@
             <span class="timeline-point"></span>
             <span class="date">665</span>
             <div class="side">
-              <p>Species extinct since 2000 </p>
-              <p class="h-text">orem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+              <p>Fauna species extinct per year</p>
+            <p class="h-text">They were all contributing to the balance of our ecosystem</p>
+
             </div>
           </li>
           <li class="list-items">
             <span class="timeline-point"></span>
-            <span class="date">1000</span>
-            <div class="side">
-              <p>Species extinct since 2000 </p>
-              <p class="h-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
+
+            <span class="date">160</span>
+          <div class="side">
+            <p>flora species extinct per year</p>
+            <p class="h-text">And with it, the possibility of using them medically</p>  
+          </div>
+
           </li>
           <li class="list-items">
             <span class="timeline-point tm-pointxl"></span>
-            <span class="date date1">2022</span>
+            <span class="date date1">103</span>
             <div class="side">
-              <p>Species extinct since 2000 </p>
-              <p class="h-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <p>types of flowers extinct per year</p>
+              <p class="h-text">Impacting de facto the insects living from them</p>
             </div>
           </li>
           <li class="list-items">
             <span class="timeline-point"></span>
-            <span class="date">1000</span>
+            <span class="date">3000</span>
             <div class="side">
-              <p>Species extinct since 2000 </p>
-              <p class="h-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <p>billions of euros lost per year</p>
+              <p class="h-text">In deplying firefighters and replacing installations</p>
             </div>
           </li>
           <li class="list-items">
             <span class="timeline-point"></span>
-            <span class="date">1000</span>
+            <span class="date">10000</span>
             <div class="side">
-              <p>Species extinct since 2000 </p>
-              <p class="h-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <p>death due to fires per year</p>
+              <p class="h-text">They could all have been avoided...</p>
             </div>
           </li>
         </ul>
@@ -133,7 +122,8 @@
     </section>
   </section>
 
-  <section id="project" class="project">
+    <div class = "anchor" id="project"></div>
+  <section  class="project">
     <div class="projcontainer">
       <h2>Join us to be a part of the forest!</h2>
       <p>We use your donations to create forests. Our goal is to sustainably plant trees to create an ecosystem in which
@@ -145,7 +135,7 @@
 
   </section>
 
-  <section class="join">
+  <section id="joinus">
     <div class="joincontainer">
       <div class="joinsubcontainer">
         <img class="imgstep" src="img/step1.png">

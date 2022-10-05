@@ -1,3 +1,4 @@
+/*General css and --root*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 *,
 *::before,
@@ -16,12 +17,19 @@ body {
   overflow-x: hidden;
 }
 
-/*CSS for the hero mobile version TEST FOR REBASE*/
+
+
+
+
+/*CSS mobile version*/
+
+/*Menu mobile version*/
+
 .menuIcon.material-symbols-outlined {
   font-family: "Material Symbols Outlined";
   font-weight: normal;
   font-style: normal;
-  font-size: 10vw;
+  font-size: 45px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -33,42 +41,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.sticky-nav {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  top: 0;
-  z-index: 1000;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.sticky-nav.sticky{
-  position: fixed;
-  width: 100%;
-  display: flex;
-  top: 0;
-  padding-left: 5%;
-  padding-right: 5%;
-  z-index: 1000;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
-  transition: all .2s ease-out;
-  background-color: #fff;
-}
 
 .logo {
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 10vw;
+  width: 14vw;
   height: auto;
 }
-
-.background {
-    background: url(./img/hero-background.jpg) no-repeat;
-    background-position: left;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 
 .maincontainer {
     padding-right: 5%;
@@ -79,8 +58,10 @@ body {
     align-items: stretch;
     overflow-x: hidden;
     overflow-y: hidden;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.09) 100%);
-    /*backdrop-filter: blur(2px);*/
+    background: url(./img/hero-background.jpg) no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav.subcontainer.logo {
@@ -105,8 +86,6 @@ nav.subcontainer.logo {
   display: none;
 }
 
-
-
 li {
   list-style: none;
 }
@@ -114,7 +93,7 @@ li {
 h1 {
   font-size: 5em;
   font-family: "Montserrat";
-  font-weight: 900;
+  font-weight: 20vw;
   letter-spacing: -0.09em;
   margin-bottom: 30px;
 
@@ -132,12 +111,14 @@ p {
   top: 1rem;
   right: 1rem;
   padding: 4px;
-  margin-top: 2%;
+  margin-top: 1%;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-
+.anchor{
+  height: 80px;
+}
 .closeIcon.material-symbols-outlined {
   display: none;
   font-size: 10vw;
@@ -178,45 +159,29 @@ p {
 .menuItem {
   text-decoration: none;
   color: #000000;
-  font-size: 1em;
+  font-size: 3.8em;
   line-height: 1.3em;
   font-family: "Montserrat";
-  font-weight: 400;
+  font-weight: 900;
   letter-spacing: -0.09em;
-  padding-left: 100px;	
 }
 
-.desktop-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.desktop-menu {
-  list-style: none;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.desktop-nav ul li {
-  padding: 5px;
-  margin-left: 0;
-
-};
-
-.sticky-nav {
+.subcontainer.logo.sticky{
   position: fixed;
   width: 100%;
   display: flex;
   top: 0;
+  right:0;
+  left:0;
+  padding-left: 5%;
+  padding-right: 5%;
   z-index: 1000;
   box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
   transition: all .2s ease-out;
+  background-color: #ffff;
 }
 
+/*timeline mobile version*/
 /*About*/
 .about{
   padding-right: 5%;
@@ -224,14 +189,16 @@ p {
   margin-bottom: 15%;
   margin-top: 15%;
 }
-
+p .align-right{
+  margin-bottom: 10%;
+}
 /* Timeline CSS */
 .list-items:nth-child(2n) {
   margin-top: 0px;
   display: flex;
+  flex : 1;
   justify-content: space-between;
   flex-direction: row-reverse;
-  gap: 30px;
   width: 100%;
   padding: 0px;
   align-items: center;
@@ -239,9 +206,10 @@ p {
 
 .list-items {
   margin-top: 0px;
+  margin-bottom: 15%;
   display: flex;
+  flex : 1;
   justify-content: space-between;
-  gap: 30px;
   width: 100%;
   padding: 0px;
   align-items: center;
@@ -263,6 +231,7 @@ p {
 .side {
   width: 50%;
   text-align: center;
+  padding-left: 20px;
 }
 
 .h-text {
@@ -277,6 +246,7 @@ p {
   width: 50%;
   text-align: center;
   font-weight: bold;
+  padding-right: 20px;
   top: 0;
   left: 0;
   font-size: 2.5rem;
@@ -287,6 +257,7 @@ p {
   width: 50%;
   text-align: center;
   font-weight: bold;
+  padding-right: 20px;
   top: 0;
   left: 0;
   font-size: 2.5rem;
@@ -309,67 +280,36 @@ li p {
   font-weight: bold;
 }
 
+/*CSS desktop version with a media query at min 1000px*/
+
 @media screen and (min-width: 1000px) {
-  .sticky-nav {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    top: 0;
-    z-index: 1000;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .sticky-nav.sticky{
-    position: fixed;
-    width: 100%;
-    display: flex;
-    top: 0;
-    padding-left: 5%;
-    padding-right: 5%;
-    z-index: 1000;
-    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
-    transition: all .2s ease-out;
-    background-color: #fff;
-  }
-  .mobile-menu{
-    display: none;
-  }
-
-  section {
+.menu{
+  display: contents;
+}
+.hamburger{
+  display: none;
+}
+.menuItem {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  font-family: "Montserrat";
+  font-weight: 400;
+  letter-spacing: -0.09em;
+  padding-left: 0px;	
+}
+.menu >li:first-child{
+  margin-left: 50%;
+}
+section {
     padding-right: 5%;
     padding-left: 5%;
   }
 
-  .desktop-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.desktop-menu {
-    list-style: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.desktop-nav ul li {
-    padding: 5px;
-    margin-left: 0;
-
-};
-
-  .menuItem {
-    text-decoration: none;
-    color: #000000;
-    font-size: 1em;
-    line-height: 1.3em;
-    font-family: "Montserrat";
-    font-weight: 400;
-    letter-spacing: -0.09em;
-}
-
+  .subcontainer.hero {
+    padding-top: 8%;
+  }
 .hero p {
   display: grid;
   grid-template-rows: 1fr;
@@ -377,13 +317,19 @@ li p {
   gap: 150px;
 }
 
+.logo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 140px;
+  height:auto;
+}
 
   .timeline {
     display: block;
     margin-top: 300px;
-    padding: 15px;
-    padding-right: 5%;
-    padding-left: 5%;
+    /*padding: 15px;*/
+    /*padding-right: 5%;*/
+   /* padding-left: 5%;5%;*/
     grid-template-columns: 40% auto;
     justify-content: center;
   }
@@ -416,10 +362,18 @@ li p {
     display: none;
   }
 
+  .align-right{
+text-align: right;
+padding-left: 35%;
+padding-right: 5%;
+  }
+.anchor{
+  height: 60px;
+}
   .date {
     position: absolute;
     top: -165px;
-    left: 25%;
+    left: 16%;
     opacity: 0;
     transition: 1.5s;
     font-size: 3rem;
@@ -481,7 +435,12 @@ li p {
     transition: 1s linear;
     border-radius: 999px;
   }
-
+  .about{
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-bottom: 15%;
+    margin-top: 15%;
+  }
   .side {
     width: 100%;
     text-align: center;
@@ -491,7 +450,27 @@ li p {
     font-size: 1rem;
     font-weight: 600;
   }
+
 }
+
+
+
+
+
+/*CSS for the form with a media query at 850px*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer css mobile 1st */
 .projcontainer {
@@ -504,16 +483,15 @@ li p {
 
 .project {
   background-color: #f3f3f3;
-
 padding-top: 10%;
 }
 
 .joincontainer {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   padding-top: 15%;
+  background-color: #f3f3f3;
 }
 
 .join {
@@ -521,7 +499,7 @@ padding-top: 10%;
 }
 
 .joinsubcontainer {
-  background-color: #ffffff;
+  background-color: #ffff;
   width: 80%;
   margin-top: 5px;
   height: 200px;
@@ -611,7 +589,7 @@ h4 {
     margin-top: 10%;
     margin-bottom: 10%;
     height: 6vh;
-    width: 40vw;
+    width: 200px;
     color: white;
     border: none;
     background-color: #000000;
@@ -763,7 +741,13 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 30px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  #joinus{
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .joinsubcontainer {
@@ -811,14 +795,12 @@ h4 {
 
 /* End of Desktop Version Footer */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 999px) {
   .formPopup {
     padding-left: 25%;  
   }
 
-  .desktop-menu{
-    display: none;
-  }  
+
 
   .closeIcon.material-symbols-outlined {
     display: flex;

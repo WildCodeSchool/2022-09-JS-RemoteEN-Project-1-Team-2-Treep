@@ -128,9 +128,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchorlink => {
   });
 });
 
-// stycky navbar
-
-window.addEventListener("scroll", function(){
-  var desktopnav = this.document.querySelector(".sticky-nav");
-  desktopnav.classList.toggle("sticky", window.scrollY > 0);
-})
