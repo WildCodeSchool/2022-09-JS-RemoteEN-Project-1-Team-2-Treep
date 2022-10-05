@@ -187,6 +187,18 @@ p {
   background-color: #ffff;
 }
 
+.subcontainer.socials {
+  display: flex;
+  justify-content: flex-end;
+  transform: translateX(622px) translateY(250px) rotateZ(270deg);
+}
+
+.socials ul li {
+  display: inline;
+  margin-left: 5rem;
+}
+
+
 /*timeline mobile version*/
 /*About*/
 .about{
