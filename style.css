@@ -524,10 +524,10 @@ padding-top: 10%;
   background-color: #ffffff;
   width: 80%;
   margin-top: 5px;
-  height: 150px;
+  height: 200px;
   text-align: center;
   padding-left: 5%;
-    padding-right: 5%;
+  padding-right: 5%;
 }
 
 .contact {
@@ -582,6 +582,19 @@ h4 {
   margin-bottom: 0px;
   font-weight: normal;
 }
+
+.imgstep {
+  margin-top: 20px;
+  height: 75px;
+  width: 100px;
+}
+.joincontainer {
+  font-weight: bold;
+}
+.joincontainer p {
+  margin-top: 20px;
+}
+
 
 /* CSS FOR THE POP-UP FORM BELOW (INVISIBLE UNTIL BUTTON CLICKED)*/
 
@@ -669,9 +682,9 @@ h4 {
 }
 
 .formContainer input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
-  margin: 5px 0 20px 0;
+  margin: 0px 0 10px 0;
   border-style: solid;
   border-color: #000000!important;
   border-radius: 1px 1px 1px 1px;
@@ -679,7 +692,7 @@ h4 {
 }
 
 .formContainer input:focus {
-  background-color: rgb(177, 254, 182);
+  background-color: #F4F4F4;
   outline: none;
 }
 .modal-h2 {
@@ -692,7 +705,8 @@ h4 {
 .formContainer .btn {
   padding: 12px 20px;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
+  margin-top: 20px;
   margin-bottom: 15px;
   border-radius: 10px;
   color: #FEFFFF!important;
@@ -757,6 +771,15 @@ h4 {
     width: 33%;
   }
 
+  .imgstep {
+    margin-top: 50
+    px;
+  }
+
+  .joinsubcontainer p {
+    margin-top: 75px;
+  }
+
   .joincontainer div{
    height: 50vh;
    width: 30%;
@@ -776,6 +799,9 @@ h4 {
   h4 {
     margin-top: 100px;
   }
+
+  .formContainer input {
+    width: 60%;
 }
 
 /* .project, .join, .contact, .footer{
