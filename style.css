@@ -732,6 +732,14 @@ h4 {
   opacity: 1;
 }
 
+a:visited {
+  color: rgb(2, 100, 0)
+}
+
+a {
+  text-decoration: none;
+  color: rgb(2, 100, 0)
+}
 
 /* Desktop Version Footer */
 
