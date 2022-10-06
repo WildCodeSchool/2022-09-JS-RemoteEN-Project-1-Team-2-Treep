@@ -292,6 +292,7 @@ li p {
 .projectbloc {
     display: flex;
     justify-content: center;
+    margin-bottom: 4em;
     padding-left: 2em;
     padding-bottom: 5em;
     gap: 1em;
@@ -390,9 +391,7 @@ section {
   .h-text {
     display: none;
   }
-  .socialsandhero{
-    display:
-  }
+
   .align-right{
 text-align: right;
 padding-left: 35%;
@@ -508,7 +507,7 @@ padding-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15%;
+  padding-top: 12%;
   background-color: #f3f3f3;
 }
 
@@ -755,7 +754,7 @@ h4 {
   .joincontainer {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-right: 5%;
     padding-left: 5%;
   }
@@ -767,7 +766,7 @@ h4 {
 
   .joinsubcontainer {
     flex-basis: 1;
-    width: 33%;
+    min-width: 32%;
   }
 
   .imgstep {
@@ -796,7 +795,10 @@ h4 {
   .openButton:hover{
     background-color:rgba(0,0,0,0.80);
   }
-
+  #bottomButton{
+    margin-top: 7em;
+    margin-bottom: 7em;
+  }
   h4 {
     margin-top: 100px;
   }
@@ -912,7 +914,7 @@ h4 {
     padding-left: 40vw;
   }
 }
-
+}
 
 
 /* End of CSS For Pop-Up Window */
