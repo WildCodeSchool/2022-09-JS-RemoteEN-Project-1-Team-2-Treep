@@ -251,7 +251,7 @@ p.align-right{
   width: 50%;
   text-align: center;
   font-weight: bold;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   top: 0;
   left: 0;
   font-size: 2.5rem;
@@ -262,7 +262,7 @@ p.align-right{
   width: 50%;
   text-align: center;
   font-weight: bold;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   top: 0;
   left: 0;
   font-size: 2.5rem;
@@ -345,7 +345,7 @@ section {
 }
 
 .logo {
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 5px;
   width: 140px;
   height:auto;
@@ -433,9 +433,9 @@ padding-right: 5%;
   }
 
   .tm-pointxl {
-    width: 20px;
-    height: 20px;
-    top: -42px;
+    width: 15px;
+    height: 15px;
+    top: -40px;
     left: 40%;
     transition: 1.5s ease;
     border: none;
@@ -667,7 +667,9 @@ h4 {
 .formContainer {
   position: relative;
   padding: 1rem;
-  max-width: 300px;
+  max-width: 350px;
+  margin-left: -25%;
+  margin-right: 25%;
   margin-top: 75px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 15px;
@@ -733,12 +735,12 @@ h4 {
 }
 
 a:visited {
-  color: rgb(2, 100, 0)
+  color: rgb(0, 0, 0)
 }
 
 a {
   text-decoration: none;
-  color: rgb(2, 100, 0)
+  color: rgb(0, 0, 0)
 }
 
 /* Desktop Version Footer */
@@ -755,7 +757,9 @@ a {
 
   .formContainer {
     max-width: 500px;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
 
@@ -826,9 +830,9 @@ a {
 /* End of Desktop Version Footer */
 
 @media screen and (max-width: 999px) {
-  .formPopup {
+  /* .formPopup {
     padding-left: 25%;  
-  }
+  } */
 
 
 
@@ -905,24 +909,10 @@ a {
     }    
 }
 
-@media screen and (max-width: 500px) {
-  .formPopup {
-    padding-left: 15%;
+}
+@media screen and (min-width: 500px) and (max-width:1000px) {
+  .formContainer {
+
+    margin-left: 0%;
   }
 }
-
-@media screen and (max-width: 350px) {
-  .formPopup {
-    padding-left: 0%;
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  .formPopup {
-    padding-left: 40vw;
-  }
-}
-}
-
-
-/* End of CSS For Pop-Up Window */
