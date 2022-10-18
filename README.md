@@ -1,5 +1,5 @@
 # TreepProject
-Wild Code School Project 1 (Remote EN) Website: https://dreanx.github.io/TreepProject/
+Wild Code School Project 1 (Remote EN) Website: https://wildcodeschool.github.io/2022-09-JS-RemoteEN-Project-1-Team-2-Treep/
 
 The Treep project is a concept project created on an original idea of Pauline Kraus. 
 The team behind the conception is composed of: Pierre Basck, Osvaldo Felices, Anna Vachluk, Russell James Corpuz and Pauline Kraus.
